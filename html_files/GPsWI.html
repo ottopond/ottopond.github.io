@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/tabs.css" /> 
+<link href="../css_files/greenpedals.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../css_files/menu_style.css" type="text/css" />
+
+
+
+<style type="text/css">
+<!--
+
+
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+.bkg_gray{
+	width:930px;
+	margin: 0 auto;
+	
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+
+#mainWindow {
+	background-image:url(../images/race.jpg);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+#footer {
+	background-color: #5F0ABC;
+
+	position: absolute;
+	left:0px;
+	width: 1080px;
+	
+	height: 40px;
+}
+
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+	
+}
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar">
+    <img src="../images/marleftlogopurp.png" />
+    
+    
+</div>
+
+<div id="backstrokw">
+
+<div id="rentals">
+<img src="../images/rentbut.png" onclick="MM_goToURL('parent','../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../images/repairsBut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../images/cvBut.png" onclick="MM_goToURL('parent','../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../images/merchbut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../images/questBut.png" onclick="MM_goToURL('parent','../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../images/articlesBut.png" onclick="MM_goToURL('parent','../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../images/contactBut.png" onclick="MM_goToURL('parent','../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../images/subContact.png" />
+</div>
+
+
+<div class="productsContent1" id="rightcolumn" style="padding-top:20px">
+		         <div style="width:575px; float:left; background-color:#FFF; color:#333; padding-bottom:20px; margin-left:100px">
+               <div style="background:#C7CED1; height:20px; padding-top:10px; padding-left:10px"><a href="../products.html">Products</a> | Felt Bikes with Bosch Motors </div>
+               <div style="margin-left:188px"><img src="../images/felt_bosch_logo.png" width="300" height="95" alt="Altered" /></div>
+              <div class="brand_page_product_info">
+                <p><img src="../images/felt_lebowski_thumb.png" width="150" height="108" alt="Altered Proline 600" /></p>
+<h3>
+            Lebowsk-e 10</h3>
+               <p>The LEBOWSKe fat e-bike provides pure fun for rolling through the sand, plowing through the snow or conquering the trail summit. The seamless and smooth Bosch eDrive motor, combined with super-wide 4” tires, provides remarkable traction and control. No matter what time of year, what type of terrain, or where your adventure takes you, the LEBOWSKe is the ultimate bike for any condition.</p>
+
+<p>Price: $5,799.00</p>
+               
+               <p>&nbsp;</p>
+               <p><a href="../products/altered/proline.html">More details &gt;&gt;</a></p></div><br clear="all" />
+               <div class="brand_page_product_info"><img src="../images/felt_Nine-E-20_thumb.png" width="150" height="108" alt="Altered Wombat 250" />
+                 <h3>
+               Nine-e 20</h3>
+               <p>
+The NINEe is engineered for adventure with a pioneering mountain bike design and 29-inch wheels that confidently roll over both potholes and rock gardens. Whether you’re chasing the mountain summit or a weekend explorer who wants to go farther faster, the NINEe is the electric bike for you.
+
+Price: $4,499.00
+ </p>
+               <p>&nbsp;</p>
+               <p><a href="../products/altered/wombat.html">More Details &gt;&gt;</a></p></div><br clear="all" />  
+               <div class="brand_page_product_info">	         
+                 <img src="../images/felt_95_thumb.png" width="150" height="96" alt="Felt 95e" /><h3>Sport 95-e
+                 </h3>
+                 <p>
+A commuting and fitness machine, the Felt SPORTe is the ultimate bike to get you around town with pleasing speed and ease. With everything a rider needs for swift commutes, running errands or cycling adventures, the SPORTe comes in traditional and step-through designs to fit all types of riders. Skip the traffic without breaking a sweat, grab a SPORTe. (Accessory rack, light, and fender kit available for aftermarket purchase.)
+
+$3599.00
+</p>
+                 <p>&nbsp;</p>
+                 <p><a href="../products/altered/m800.html">More Details&gt;&gt;</a></p>
+               
+               </div>
+		       </div>
+                            
+	       </div>
+
+</div>
+
+
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>
+</div>
+</div></div>
+</body>
+
+
+</html>

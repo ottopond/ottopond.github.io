@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+
+
+
+ <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/tabs.css" />
+
+
+        
+<link href="../../css_files/greenpedals.css" rel="stylesheet" type="text/css" />
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+<link rel="stylesheet" href="../../css_files/menu_style.css" type="text/css" />
+
+<style type="text/css">
+<!--
+
+
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+.bkg_gray{
+	width:930px;
+	margin: 0 auto;
+	
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../../images/race.jpg);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+/*#footer {
+	background-color: #5F0ABC;
+
+	position: absolute;
+	left:0px;
+	width: 1100px;
+	top: 702px;
+	height: 40px;
+}
+*/
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+#wrapper #mainWindow #rightcolumn div .panes div div .spec_col li {
+	padding-top: 6px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div h3 {
+	padding-top: 6px;
+	padding-bottom: 3px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div p {
+	padding-bottom: 3px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div ul {
+	list-style-type: disc;
+	float: none;
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar"><img src="../../images/marleftlogopurp.png" /></div>
+
+<div id="backstrokw">
+
+<div id="rentals">
+<img src="../../images/rentbut.png" onclick="MM_goToURL('parent','../../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../../images/repairsBut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../../images/cvBut.png" onclick="MM_goToURL('parent','../../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../../images/merchbut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../../images/questBut.png" onclick="MM_goToURL('parent','../../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../../images/articlesBut.png" onclick="MM_goToURL('parent','../../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../../images/contactBut.png" onclick="MM_goToURL('parent','../../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../../images/subContact.png" />
+</div>
+
+<div class="productsContent1" id="rightcolumn" style="padding-top:30px"><div style="background-color:#FFF; width:600px; float:left; width:600px; padding-left:10px;
+padding-top:10px; padding-bottom:20px">
+<div style= height:20px; padding-top:10px;  padding-left:10px"><a href="../../products.html">Products</a> |
+
+
+ <a href="../DahonPages/Dahon_All_Products.html">
+                Dahon Folding Bikes
+                
+        </a> | <span class="current">
+                
+                 Mariner
+                 
+                 </span> </div>
+
+<div><img src="../../images/DahonMariner300.png" width="300" height="210" /></div>
+<div style="width:250px;
+float:right;color:#333;top;-50px:  padding-bottom:20px">            
+<div>             <h3>Mariner<br />
+               
+</h3>
+                 
+                <br/> 
+         This model is made specifically for Marine environments.  A great choice for stowing on the boat.
+         <br/><br/>
+               <p>Price $579.00</p></div></div>
+</div>
+
+    </div>
+<div>
+<div style="padding-right:60px">
+               <div id="other_products">
+                 <div style="background:#C7CED1; height:30px; padding-top:10px; padding-left:10px"
+                 
+                 
+                 >Other Dahon Bikes
+                 
+                 </div>
+                 <p> <a href="working_Dahon_Expresso_page.html">
+
+<img src="../../images/DahonExpresso120.png" width="120" height="79" />
+Expresso</a></p>
+                
+
+				<p><a href="working_Dahon_MuP8_page.html"><img src="../../images/DahonMuP8120.png" width="120" height="93" />
+Mu P8</a></p>
+
+
+ 			<p><a href="working_Dahon_ciao_page.html">
+  
+<img src="../../images/DahonCiaoI7120.png" width="120" height="86" />
+Ciao</a></p>         
+	
+    
+<p><a href="working_Dahon_SpeedD7_page.html"><img src="../../images/DahonSpeedD7120.png" width="120" height="84"/>Speed D7</a></p>
+               
+                  
+ <br/>
+                 
+                 
+        </div>         
+                  
+               
+                   <p></p>
+      </div>
+    </div>
+              
+
+               <div style="width:600px; float:left; margin-top:20px; color:#333;">
+               
+               <ul class="tabs">
+ 
+	<li><a href="#first" class="w1">Features</a></li> 
+	<li><a href="#second" class="w1">Specifications</a></li> 
+    <li><a href="#third" class="w1">Warranty</a></li> 
+    <li><a href="#fourth" class="w1">Links</a></li> 
+</ul> 
+ 
+<!-- tab "panes" --> 
+<div class="panes" style="background:#FFF; margin-left:1px"> 
+
+	<div>
+    
+A frequent winner of folding bike shootouts that include bikes that cost up to four times as much, the Mariner is one of our most popular bicycles. It’s a highquality, lightweight bike at a surprisingly affordable price. Its portability makes the Mariner ideal for trips that include a stretch by bus or train – perfect for multi-modal urban transport.    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div style="height:200px; overflow:auto;" >
+      <ul class="spec_col">
+
+ 
+ <li><strong>   Wheel Size   </strong> 20" </li>
+ 
+ <li><strong>Folded Size</strong>28 × 81 × 66 cm (11" × 31.9" × 25.7") 				</li>
+<li><strong>      </strong>				</li> <li><strong>Components</strong>
+ 
+ <li><strong>  Speeds    </strong>	INTER-7 SPEED			</li>
+ 
+ <li><strong>Frame Sizes</strong>1</li>
+ 
+ <li><strong>Gear Inches      </strong>37" - 85"</li>
+ 
+ <li><strong>Distance: Saddle to Pedal</strong>	Min: 695 mm (27.1") Max: 955 mm (37")			</li>
+
+ 
+ <li><strong>Distance: Seatpost to Handlebar</strong>	Min: 610 mm (23.8") Max: 635 mm (24.8")			</li>
+ 
+ <li><strong> Suggested Rider Height     </strong>	142 - 193 cm (4'8" - 6'4")			</li>
+ 
+ <li><strong> Max. Rider Weight     </strong>	105 kg (230 lbs)			</li>
+ 
+ <li><strong>Frame</strong>	KM SERIES, 7005 ALUMINUM ALLOY, VISEGRIP TECHNOLOGY			</li>
+ 
+ <li><strong>Fork</strong>ALUMINUM, INTEGRATED				</li>
+ 
+ <li><strong> Handlepost     </strong>RADIUS TELESCOPE, ADJUSTABLE, PATENTED FUSION AND V-CLAMP TECHNOLOGIES, FORGED ALUMINUM</li>
+ 
+ <li><strong>Handlebar</strong>6061-T6 ALUMINUM</li>
+ 
+ <li><strong> Headset </strong>DAHON FUSION+ ZERO STACK, CATRIDGE BEARINGS				</li>
+ 
+ <li><strong>Grips</strong>XH-G51 90 mm/125 mm BLACK WITH "O", PVC</li>
+ 
+ <li><strong>Saddle</strong>VL3057A, BOTH COLORS (BLACK AND GREY)</li>
+ 
+ <li><strong>Seatpost</strong>SP-22, 34 x 580 SILVER</li>
+ 
+ <li><strong>Seat Clamp</strong>DAHON COVERT, HIGH LEVERAGE DESIGN</li>
+ 
+ <li><strong>Brakes</strong>DHV-107 W/O LOGO, SILVER</li>
+ 
+ <li><strong>Brake Levers</strong>DHL-42G W/O LOGO </li>
+ 
+ <li><strong>Brake Cables</strong>2P, BLACK HOUSING, BLACK CABLES</li>
+ 
+ <li><strong>Front Hub</strong>FM31-F 3/8 x 14 G x 20 H x 74 x 110 mm</li>
+ 
+ <li><strong>Rear Hub</strong>FM32-7 3/8 x 14 G x 28 H x 130 x 170 mm</li>
+ 
+ <li><strong>Spokes</strong>STAINLESS</li>
+ 
+ <li><strong>Tires</strong>K-1045 20"x1.75"</li>
+ 
+ <li><strong>Shifter(s)</strong>SRAM, 7 SPEED</li>
+ 
+ <li><strong>Crankset</strong>KINETIX SUPARA, FORGED CRANKS, ALLOY CHAINGUARD</li>
+ 
+ <li><strong>Bottom Bracket</strong>CH-302</li>
+ 
+ <li><strong>Chain</strong>KMC Z-51, ANTI-RUST</li>
+ 
+ <li><strong>Pedals</strong>FOLDING BOTH SIDE, NW-319</li>
+ 
+  <li><strong>Shift Cables</strong>SlS OR SP, BLACK</li>
+   <li><strong>Kickstand</strong>NH-KC19AA, SILVER</li>
+    <li><strong>Luggage Socket</strong>FRAME INTEGRATED</li>
+     <li><strong>Clip System</strong>MAGNETIX SYSTEM</li>
+      <li><strong>Rear Light</strong>OPTION: DAHON TALL LIGHT OR SPANNINGA DELUXE FOR RACK</li>
+      <li><strong>Mudguards</strong>OPTION: SKS MINI 20</li>
+      <li><strong>Rack(s)</strong>OPTION: ARC RACK WITH LUGGAGE STRAP</li>
+      <li><strong>Chain Guard</strong>DAHON FREEDRIVE</li>
+      <li><strong>      </strong>				</li>
+
+
+
+ 
+      </ul>
+      
+             
+    </div> 
+        <div style=" height: 200px;
+	overflow: auto;">
+        
+ <h3>Warranty</h3>
+
+ <div id="content-inner-left">
+   <div id="c750">
+     <div>
+       <h1>Dahon Warranty Information</h1>
+     </div>
+     <h2>DAHON Lifetime Warranty</h2>
+     <p><strong>Scheduled Maintenance</strong></p>
+     <p>Proper care of your DAHON bicycle requires regular   maintenance, inspection, and adjustment.  New bicycles must be assembled   and adjusted by an authorized DAHON reseller. </p>
+     <p>Upon every ride DAHON bicycles should be inspected   for properly tensioned folding latches, free play, as well as changes in   ride quality.  Any change should be checked and adjusted before   riding.  If you are unsure about a function or use of your DAHON   bicycle, return to your authorized DAHON reseller for instruction.  This   includes folding, unfolding, adjustment, shifting, and braking. </p>
+     <p><strong>3 months after purchase</strong> your DAHON bicycle must be returned to your original authorized DAHON reseller for inspection and adjustment. </p>
+     <p><strong>Yearly maintenance</strong> at bicycle owner’s expense is required.  A warranty claim may not be considered without proper maintenance records. </p>
+     <p> </p>
+     <p><strong>DAHON Lifetime Warranty (excluding China)</strong></p>
+     <p>We warrant our bicycle frames, handle posts and   rigid forks for as long as the original purchaser owns the bicycle to be   free of defects in materials and workmanship.  In addition we warrant   all non-wear components for a period of one year.  Certain individual   component warranties and local law may supersede this warranty policy. </p>
+     <p>This warranty is limited to the repair or   replacement of a defective frame, handlepost, fork or component, and is   the sole remedy of the warranty.  This warranty applies to the original   retail purchaser of the bicycle and is non-transferable.  This warranty   only covers DAHON bicycles sold through authorized DAHON resellers, and   maintained per the <strong>Scheduled Maintenance</strong> explained above. </p>
+     <p>Your warranty does not cover normal wear and tear,   abuse, stunt riding, commercial use, improper assembly or maintenance,   installation of parts or accessories not originally intended or   compatible, installation of power systems such as engines or electric   motors, damage due to accident, weather or neglect, or modification of   the bicycle. </p>
+     <p>A defect in material or workmanship is defined as;   “A flaw, failure or cosmetic blemish caused by the manufacturing process   or material that was not consistent with the original design”.  This   warranty implies no strength or fatigue value beyond regional government   standards.  This warranty does not mean “indestructible” as all   materials can fail if pushed beyond design and manufacturing limits. </p>
+     <p>Wear items are defined as;  Tires, Tubes, Brake   pads, Brake and gear cables and housing, Chains, gears, grips, and   saddles.  All of these items are subject to varying wear life depending   on use, load, weather, road conditions etc.  Premature wear or “defect”   will be taken into account in any warranty claim involving a wear item. </p>
+     <p><strong>Exclusions:</strong></p>
+     <p>·         All   damage resulting from Commercial use, accident, misuse, abuse, neglect,   improper maintenance, or from anything other than normal and ordinary   use of the bicycle.</p>
+     <p>·         For all damage resulting from off road or stunt riding, multiple passengers, or cargo hauling.</p>
+     <p>·         DAHON bicycles sold in mainland CHINA have a 5 year warranty and are non-transferrable outside of mainland China.</p>
+     <p> </p>
+     <p><strong>Making a Warranty Claim</strong></p>
+     <p>You must register your DAHON bicycle online with our   warranty department before any claim can be made.  Your dealer can help   you or provide you the DEALER CODE.  Go to   www.dahon.com/mainnav/dahon-support/register-your-dahon.html .Any   bicycle not registered will not be covered by DAHON’s limited warranty. </p>
+     <p>You should bring your DAHON bicycle to your original   reseller if possible.  If this is not possible, please consult our   website www.dahon.com/mainnav/store-finder.html to find your nearest   DAHON authorized reseller </p>
+     <p>All DAHON warranty claims must be made through an   Authorized DAHON reseller.  Proof of purchase, the complete bicycle,   photos of the complete bicycle condition, serial number, and detail   photos of the component in question must accompany all warranty claims.    All shipping and transport costs are the responsibility of the bicycle   owner.  Labor costs beyond what your original reseller offers are the   responsibility of the bicycle owner. </p>
+     <p>All warranty claims are subject to assessment by   DAHON.  Warranty replacement will not be given for components not   returned (if requested) to DAHON. </p>
+     <p><em>NOTE: This warranty does not affect the statutory   rights of the consumer.  Where applicable, local laws take precedent   over this warranty contract.</em></p>
+   </div>
+ </div>
+ <p>&nbsp;</p></div>   
+   
+      
+      
+      <div>
+      
+      
+     <p>
+ 
+      
+     <div> <a href="http://www.usa.dahon.com/mainnav/bikes.html">
+      <p> Manufacturer's website:  </p></a>
+        <a href="http://www.usa.dahon.com/mainnav/bikes/allfoldingbikes0.html"><p>All Dahon Folders we can order for you</p></a>
+
+
+        </div>
+        
+        
+        
+
+    <div><br />
+    </div>
+   <div>
+   
+  
+   </div>
+   
+   
+     
+      
+     
+        </div>
+</div> 
+  </div>
+  </div>
+</div>
+
+<!--
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>-->
+</div>
+</div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

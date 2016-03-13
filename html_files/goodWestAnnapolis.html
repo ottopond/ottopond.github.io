@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+
+
+
+
+<style type="text/css">
+<!--
+
+body  {padding:0px;
+		margin:0px;
+		background-color:#F8F4FF;
+		
+}
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../images/mapmanleft320.jpg);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+	
+}
+
+
+
+#wrapper #pageContent {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	position: absolute;
+	top: 68px;
+	left: 170px;
+	text-align: center;
+	word-spacing: normal;
+	width: 930px;
+	height: 630px;
+}
+
+
+#bigWestmap {
+	background-image:url(../images/westMap.jpg);
+	height:550px;
+	width:350px;
+	margin-top:40px;
+	position: absolute;
+	right:70px;
+	top: 1px;	
+	
+	}
+
+#leftCutOut {
+	position:absolute;
+	left:65px;
+	top:40px;
+
+	}
+
+
+#cameraOne {
+	position:absolute;
+	top:150px;
+	left:60px;
+
+}
+
+
+
+#cameraTwo {
+	position:absolute;
+	top:210px;
+	left:180px;
+}
+
+
+#cameraThree {
+	position:absolute;
+	top:280px;
+	left:120px;
+}
+
+#cameraFour {
+	position:absolute;
+	top:320px;
+	left:220px;
+}
+
+#cameraFive {
+	position:absolute;
+	top:170px;
+	left:70px;
+}
+
+#cameraSix {
+	position:absolute;
+	top:140px;
+	left:170px;
+}
+
+
+#cameraSeven{
+	position:absolute;
+	top:140px;
+	left:240px;
+}
+
+#cameraEight {
+	position:absolute;
+	top:200px;
+	left:220px;
+}
+
+
+#cameraNine {
+	position:absolute;
+	top:260px;
+	left:90px;
+}
+
+
+
+
+#cameraTen {
+	position:absolute;
+	top:260px;
+	left:305px;
+}
+#cameraEleven {
+	position:absolute;
+	top:150px;
+	left:130px;
+}
+
+
+
+#cameraTwelve {
+	position:absolute;
+	top:110px;
+	left:170px;
+}
+
+#cameraThirteen {
+	position:absolute;
+	top:115px;
+	left:120px;
+}
+
+
+#tinyLogo  {
+	position:absolute;
+	top:228px;
+	left:15px;
+}
+
+
+
+
+
+
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body onload="MM_preloadImages('../images/straightaway.png')">
+
+
+
+<div id="wrapper">
+
+<div class="leftBar" onclick="MM_goToURL('parent','../goodIndex.html');return document.MM_returnValue">
+    <img src="../images/marleftlogopurp.png" />
+    
+    
+</div>
+
+<div id="backstrokw">
+
+
+<div id="rentals">
+<img src="../images/rentbut.png" onclick="MM_goToURL('parent','../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../images/repairsBut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../images/cvBut.png" onclick="MM_goToURL('parent','../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../images/merchbut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../images/questBut.png" onclick="MM_goToURL('parent','../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../images/articlesBut.png" onclick="MM_goToURL('parent','../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../images/contactBut.png" onclick="MM_goToURL('parent','../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../images/subContact.png" />
+</div>
+
+<div id="leftCutOut">
+    <img src="../images/leftinsert.png" id="lefty" />
+    </div>
+
+
+
+
+
+<div id="bigWestmap">
+
+
+
+
+
+<div id="cameraOne">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swapRamp.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+
+<div id="cameraTwo">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/straightaway.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+
+<div id="cameraThree">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swapWoodenBridge.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+
+<div id="cameraFour">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swamGravel.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+
+<div id="cameraFive">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swapRampWay.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+
+<div id="cameraSix">
+<img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swapWestwood.png',1)" onmouseout="MM_swapImgRestore()" />
+</div>
+<div id="cameraSeven"> <img src="../images/cameron.jpg" onmouseover="MM_swapImage('lefty','','../images/swapWaldourSt.png',1)" onmouseout="MM_swapImgRestore()" /></div>
+
+
+<div id="cameraEight" onmouseover="MM_swapImage('lefty','','../images/swapWaldourCirc.png',1)" onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+</div>
+
+
+<div id="cameraNine" onmouseover="MM_swapImage('lefty','','../images/swapVocHouse.png',1)"
+ onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+
+</div>
+
+<div id="cameraEleven" onmouseover="MM_swapImage('lefty','','../images/swapClaudeHouse.png',1)" onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+</div>
+
+<div id="cameraTen" onmouseover="MM_swapImage('lefty','','../images/swapBackThere.png',1)" onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+</div>
+
+<div id="cameraTwelve" onmouseover="MM_swapImage('lefty','','../images/swapBigHouse.png',1)" onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+</div>
+
+<div id="cameraThirteen" onmouseover="MM_swapImage('lefty','','../images/swapWeemsCreek.png',1)" onmouseout="MM_swapImgRestore()">
+<img src="../images/cameron.jpg" />
+</div>
+
+
+
+<div id="tinyLogo">
+<img src="../images/tinyLogo.jpg" onclick="MM_goToURL('parent','../goodShop.html');return document.MM_returnValue" />
+
+
+
+
+
+
+</div>
+</div>
+</div>
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>
+</div>
+</body>
+
+
+</html>
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+
+</script>

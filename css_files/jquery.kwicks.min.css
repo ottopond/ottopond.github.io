@@ -1,0 +1,74 @@
+
+a h1 {
+    color: #333;
+}
+dd {
+    margin-left: 22px;
+    padding: 6px 0;
+}
+code {
+    color: #c44;
+}
+
+.navbar-inner .nav > li > a:hover {
+    color: #ccc;
+}
+.container.main {
+    background-color: #efefef;
+    background-image: url("../img/bg-textured.png");
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 5px;
+}
+#content {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 15px 0 15px 15px;
+}
+#content p, #content li {
+    font-size: 15px;
+    line-height: 19px;
+}
+#content h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#content h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+#content h3 {
+    margin-bottom: 7px;
+}
+#kwickscontainer {
+	float:right;
+	
+}
+#sidebar {
+    padding-bottom: 20px;
+}
+
+#stream-promo p {
+    padding: 6px;
+    text-align: left;
+}
+#stream-promo img {
+    margin-bottom: 20px;
+    width: 156px;
+}
+#stream-promo .thanks {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a.social-icon.social-icon-twitter {
+    background-position: -40px top;
+}
+a.social-icon.social-icon-rss {
+    background-position: -240px top;
+}
+.form-actions {
+    background-color: transparent;
+    border: medium none;
+    padding-top: 0;

@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+<link type="text/css" rel="stylesheet" href="../css_files/sliding_panels.css" />
+
+<script type="text/javascript">
+</script>
+
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min">
+</script>
+
+<script type="text/javascript" src="../scripts/jquery-1.7.1.min">
+</script>
+
+<script type="text/javascript" src="../scripts/sliding_panels.js">
+</script>
+
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16808695-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style type="text/css" media="all">
+         .tabstyle {
+
+			
+			height:460px;
+			width:400px;
+			position:absolute;
+			top:110px;
+			left:-88px;
+			list-style:none;
+		
+			
+         } 
+		 
+		 
+.faqTitle {
+	height:40px;
+	width:400px;
+	padding-top:8px;
+	float:none;
+	z-index:50;
+	margin: 0px;
+	left: 40px;
+	top: 40px;
+	position: absolute;
+	font-size: 22px;
+	color:#8D051A;
+	list-style:none;
+	background-color: #EAFFFF;
+	-webkit-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	border: 1px solid #000;
+         } 
+		 </style>
+
+
+<style type="text/css">
+
+.sp .tabs {
+	list-style-type: none;
+}
+
+
+.sp .panel_container .panels {
+}
+
+
+body  {padding:0px;
+		margin:0px;
+		background-color:#F8F4FF;
+		
+}
+
+.sp .panel_container .panels .panel .panel_content {
+	overflow: auto;
+}
+
+
+h1 {
+	color: #C33;
+	height: 30px;
+	width: 300px;
+}
+
+
+.sp .panel_container {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-stretch:ultra-expanded;
+	width:380px;
+	max-height:590px;
+	padding-left:25px;
+	padding-right:15px;
+	background-color:#E8FFFF;
+	left:30px;
+	
+}
+
+
+
+.sp .tabs .tabstyle {
+	
+	padding-top:10px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ .sp .tabs {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #903;
+}
+
+.sp .panel_container .panels .panel .panel_content ul {
+	padding-top: 10px;position:absolute; left:100;top:300px;
+}
+
+ .faqTitle p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #F00;
+	text-align: center;
+	padding-top: 2px;
+}
+
+
+.qafContent{
+
+	height: 590px; 
+	width: 800px;
+	display: block;
+	z-index:0
+}
+
+
+
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../images/goodBubble.jpg);
+	position: absolute;
+	height: 636px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar" onclick="MM_goToURL('parent','goodIndex.html');return document.MM_returnValue">
+    <img src="../images/marleftlogopurp.png" />
+    
+    
+</div>
+
+<div id="backstrokw">
+
+
+<div id="rentals">
+<img src="../images/rentbut.png" onclick="MM_goToURL('parent','../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../images/repairsBut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../images/cvBut.png" onclick="MM_goToURL('parent','../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../images/merchbut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../images/questBut.png" onclick="MM_goToURL('parent','../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../images/articlesBut.png" onclick="MM_goToURL('parent','../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../images/contactBut.png" onclick="MM_goToURL('parent','../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../images/subContact.png" />
+</div>
+
+<div class="qafContent" style="width:930px; height:570px; ">
+		       
+               
+				<div id="page">
+   <div class="faqTitle" style="text-align:center; font-family:Arial, Helvetica, sans-serif">
+   
+                  Frequently Asked Questions
+               </div>
+                
+<!-- Begin - Sliding Tabbed Panels -->
+		<div class="sp">
+			<div class="tabs">
+                  <div class="tabstyle">
+				<span class="whyebike">Why should I buy an Electric bike?</span>
+                <span class="whyGP">Why chose buy from GreenPedals?</span>
+                <span class="batteries">What should I know about E-bike batteries?</span>
+                <span class="faccon?">Factory E-bikes vs. Conversion kits?</span>
+                <span class="range">How far do the bikes go on a single charge?</span>
+                <span class="legal">Are E-bikes legal on public roads and trails?</span>
+                 <span class="power">How is the extra power controlled?</span>
+                  <span class="olsales">Do you sell through your website?</span>
+                
+                
+                
+                
+                </div>
+          </div>
+			<div class="panel_container">
+				<div class="panels">
+					<div class="panel">
+						<div class="panel_content">
+							<h2>Why should I buy an electric bike?</h2>
+							<p>There are a million reasons to own an electric bike, here are some: </p> 
+                            
+                            
+                           		<p> Electric bikes encourage riding.The net result for many owners is that they end up getting more exercise than when they owned only a conventional bike.
+                                
+                                </p> 
+                                
+                               <p>Electric bikes are a green and inexpensive means of getting around. Energy costs are less than a penny a mile.
+                                
+                                </p>
+                                
+                                <p> With an electric bike, you don’t have to worry about a ride becoming too long or too strenuous to be fun.
+                                </p>
+                                
+                                <p>Electric bikes easily double the range that you can comfortably ride. Remember your geometry: twice the range equals four times the number of places you can get to.
+                                </p>
+                                
+                                <p>Casual riders can now keep up with their more athletic riding partners and happily ride together.
+                                </p>
+                                
+                                <p> Electric bike reduce your dependence on your car and increase your awareness of your surroundings.
+                                </p>
+                                
+                                                          
+    						
+                            
+						</div>
+				   </div>
+                    
+             
+						 <div class="panel">
+						<div class="panel_content">
+                     				<h2>Why choose to buy from Green Pedals?</h2>
+	
+    					<div id= "reasons">	
+								<ul>	
+                                	<li>We carry a large inventory of the best <a href="../products.html">brands</a> in the business.</li>
+                                    <li>We offer test rides in a safe riding neighborhood so that you can be sure of selecting the right bike for you.</li>
+                                    <li>We are trained and authorized to handle <a href="../repairs.html">repair, maintenance, and warranty work.</a></li>
+                                    <li>We are committed to supporting and evolving with this developing industry. </li>
+                                    <li>We carry the full range of light electric vehicles from skateboards to full size seated scooters.</li>
+                                    <li>Our location, in the historic port town of Annapolis, is a great place to visit.</li>
+                                    
+                          </ul>
+                            
+                  </div>         
+                            
+						</div>
+				   </div>
+                  
+						
+						 <div class="panel">
+						<div class="panel_content">
+                     				<h2>What should I know about E-bike batteries?</h2>
+                                    	
+					    <p>All of our electric bikes and many of our other LEV run on lithium ion batteries. Over the past couple of decades, battery technology has been driven by the use of cell phones and laptop computers. Along the way, it was discovered that these low power electrical cells could be ganged together to provide a power source for larger devices like bikes and cars. The early ni-cad and metal hydride versions required special care to avoid developing memory, the loss of full recharging capacity. This is not the case with lithium ions batteries. Lithium ion batteries are the current state of the art and although research on power storage continues, it is doubtful that a new technology will overtake lithium ion anytime soon.</p>
+
+    <p>Previously, the standard source of portable electrical power was sealed lead acid batteries. Compared to SLA batteries of equal capacity, li-on batteries typically weigh one third as much and can be recharged twice as many times. Unfortunately, the cost of lithium ion power is at least five times that of it predecessor. For most riders this seems a worthy investment because the improved weight to capacity ratio makes possible the production of electric bikes light enough to feel like regular bikes while still providing good range.</p>
+
+   <p> Lithium ion batteries may be partially recharged if necessary, but a complete recharge takes between five and eight hours. Over the course of their development, some battery malfunctions resulting in explosions have occurred. Typically, this has happened when the batteries were stored at very high temperatures or when the design or execution of the wiring together of the cells was faulty and caused short circuits within the system. Over charging by the use of incompatible charging sources can also be hazardous. This is very rare and has not proved to be a concern with the use of electric bikes. </p>
+   <p>
+   </p>
+   <p>
+   </p>
+   
+					</div>
+                    </div>
+                    
+					<div class="panel">
+						<div class="panel_content">
+							<h2>Factory E-bikes vs. Conversion kits?</h2>
+							<p>The eZee bike and Sanyo electric bikes that we sell come complete from the factory. They are designed specifically and exclusively to be used as electric bikes. This extends from how they function to how they look. At present, the only brand of conversion kit we carry is BionX. BionX is generally accepted as the best brand on the market. The kit includes a hub motor mounted within a rim, a lithium ion battery and the microprocessor unit. Just about any bike can be retrofitted with a conversion kit. This is a good choice if you have a bike that feels just right to you or if you want an unusual sort of bike like a recumbent, folding bike or cargo carrier, (we also sell those). </p>
+							
+						</div>
+					</div>
+                    
+                        
+					<div class="panel">
+						<div class="panel_content">
+							<h2>How far do the bikes go on a single charge?</h2>   
+                            <p>Because electric bikes are intended to rely on both battery and human power, ranges can vary widely. Although there is no official way of accounting for this, most reputable manufacturers use a reasonable and somewhat consistent method to determine range. Test riders weigh anywhere from 130 to 180 pounds, use no pedal power at all, ride in no wind on a flat and straight surface and maintain a constant speed matching that of the bike’s peak efficiency, which tends to be pretty close to top speed when resistance is low. One could hardly call these real world conditions. In theory, a rider could well exceed the advertised ranges since it is common for the rider to provide most of the effort that moves the bike. But the inefficiencies of stop and go, turning and climbing usually reduce the range to below the specified distance. If the motor is used hard, the rider may get only one third of the posted range. On the other hand, some electric bike motors are regenerative; when braking or coasting downhill they generate electricity and recharge the battery. These bikes end up getting pretty close to the ranges specified and can exceed them when riders use the lower power assist settings.
+
+The bikes we sell are all rated for about 30 miles of range.
+                        
+                            </p>             
+                    
+                    
+                    
+                    </div>
+                    </div>
+                    
+                    
+                    	<div class="panel">
+						<div class="panel_content">
+							<h2>Are E-bikes legal on public roads and trails?</h2>   
+                            <p>Federal law allows for the use of “low-powered electric bicycles” on public roads without any requirement of license or registration. This law takes precedent over state law. City and county governments however can impose regulations on these vehicles as bicycles. This has been done in larger cities or where electric bikes are common but the laws tend not to be overly restrictive. Where electric bikes have not been specifically addressed, their use is regulated just as bicycles. The federal definition of the term “low-speed electric bicycle” is a two- or three-wheeled vehicle with fully operable pedals and an electric motor of less than 750 watts (1 h.p.), whose maximum speed on a paved level surface, when powered solely by such a motor while ridden by an operator who weighs 170 pounds, is less than 20 mph. All the particulars of this bill and law can be viewed at the Library of Congress website. </p>
+
+<p>Private roads, parks and trails are not covered by this law. In these cases the individual authorities establish their electric bike policies. Unfortunately, many of these authorities are unfamiliar with bikes and consider similar to mopeds which typically operate under the power of loud 2 cycle gas engines, accelerate quickly and achieve higher top speeds. Mopeds do in fact offer a different type of riding experience and don’t mix in well with pedestrians and pedal bicycles. In contrast, the sound and movements of electric bikes are most often undistinguishable from conventional bikes and put little stress on the riding environment. </p>
+                        
+                                        
+                    
+                    
+                    
+                    </div>
+                    </div>
+                    
+                    	<div class="panel">
+						<div class="panel_content">
+							<h2>How is the extra power controlled?</h2>   
+                            <p>Power delivery is handled either directly with a twist grip throttle or by a microprocessor which determines the output based on bicycle speed and/or effort being supplied by the rider.On the throttle version a rider can simply pedal as with any bike, rely completely on the motor, or mix it up at whatever proportions feel right at the moment. Microprocessor controlled bikes are programmed to deliver power in a natural feeling way and do not require constant monitoring. They regenerate the battery when braking or going downhill and generally provide greater efficiency and range. Settings are adjustable to maintain various ratios of cyclist effort compared to motor output.
+                        
+                            </p>             
+                    
+                    
+                    
+                    </div>
+                    </div>
+                    
+                    	<div class="panel">
+						<div class="panel_content">
+							<h2>Do you sell through your website?</h2>   
+                            <p>Green-Pedals does not yet offer online sales, though if you've found something you know you'd like to purchase, contact us and we can work it out over the phone.
+                        
+                            </p>             
+                    
+                    
+                    </div>  <!--panelContent-->
+                    </div>   <!--panel-->
+                    </div>		<!--panels-->
+   
+
+
+
+
+
+</div>	<!--panel_container-->
+</div>		<!--sp-->
+</div>	<!--page-->
+
+
+
+</div><!--	qaf_content-->
+
+
+
+
+
+
+
+</div>	<!--<!-mainwindow-->
+
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>
+</div>   <!--wrapper-->
+</body>
+
+
+</html>

@@ -1,0 +1,104 @@
+/*  CSS Document                             */
+/*  Written by Chris Converse for Lynda.com  */
+
+body { font: 14px Arial; margin: 0px; padding: 30px; background-color: #fff; }
+a, a:visited { color: #00f; }
+h1.fpo_text { color: #aaa; font-family: Times; font-size: 24px; }
+p.fpo_text { color: #aaa; font-family: Times; font-size: 16px; }
+
+
+
+.sp  p {
+	font-size: 1em;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 1em;
+	margin-left: 0px;
+}
+.sp h2 {
+	font-size: 1.15em;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0.5em;
+	margin-left: 0px;
+}
+.sp {
+	float: right;
+	width: 500px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	position: relative;
+}
+.sp .tabs {
+	position: relative;
+	z-index: 101;
+}
+.sp .tabs span {
+	background-color: #FFF;
+	display: inline-block;
+	margin: 0px;
+	padding-top: 8px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-bottom-color: #CCC;
+	position: relative;
+	cursor:pointer;
+}
+
+
+.sp .tabs span:first-child  {
+	padding-left:15px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	-webkit-border-top-left-radius: 12px;
+	-moz-border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+}
+
+.sp .tabs span:last-child  {
+	padding-right:15px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	-webkit-border-top-right-radius: 12px;
+	-moz-border-topright-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.sp .tabs span.selected {
+	color:#999;
+	border-bottom: 1px solid #fff;
+}
+
+.sp .panel_container {
+	background-color: #FFF;
+	margin-top: -1px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+}
+.sp .panel_container .panel .panel_content {
+	padding: 15px;
+}
+.sp .panel_container .panels {
+	position: absolute;
+	top: 0px;
+}
+.sp .panel_container .panel {
+	height: 400px;
+	position: absolute;
+}
+
+.sp .leftSide {
+	height: 550px;
+	width: 450px;
+	position: absolute;
+}

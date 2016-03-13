@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min">
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../css_files/jquery.kwicks.css"/>
+
+<link rel="stylesheet" type="text/css" href="../css_files/jquery.kwicks.min.css"/>
+       
+        <style type='text/css'>
+            .kwicks-vertical {
+                width: 410px;
+                height: 550px;
+				left:35px;
+				top:40px;
+            }
+            .kwicks-vertical > li {
+                height: 133px;
+                margin-top: 5px;
+            }
+            .kwicks-horizontal {
+                width: 410px;
+                height: 100%;
+            }
+            .kwicks-horizontal > li {
+                height: 100%;
+                width: 100px;
+                float: left;
+                margin-left: 5px;
+                background-color: #ffaa00;
+            }
+        </style>
+
+
+<script src="../engine/js/jquery.min.js" type="text/javascript"></script>
+		
+ <script>
+var jqmin = jQuery.noConflict();
+</script>
+<style type="text/css"></style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16808695-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+<script src='../scripts/jquery-1.8.1.min.js' type='text/javascript'></script>
+        <script src='../scripts/jquery.kwicks.js' type='text/javascript'></script>
+                <script src='../scripts/gruntfile.js' type='text/javascript'></script>
+
+        <script type='text/javascript'>
+            $(function() {
+                $('.kwicks-vertical').kwicks({
+                    maxSize : 295,
+                    isVertical: true,
+                    behavior: 'menu',
+                    selectOnClick: false,
+                });
+
+                $('.kwicks-horizontal').kwicks({
+                    maxSize: 295,
+                    behavior: 'menu',
+                    selectOnClick: false,
+                });
+            });
+        </script>
+
+<!--BACK TO THE SHELL STUFF-->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16808695-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style type="text/css" media="all">
+
+
+
+body  {padding:0px;
+		margin:0px;
+		background-color:#F8F4FF;
+		
+}
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			width:170px;
+			
+}
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+
+
+
+
+.shopContent{
+
+	height: 590px; 
+	width: 800px;
+	display: block;
+	z-index:0
+}
+
+
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../images/storefront2.png);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+<img src="" width="936" height="634" />
+
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar">
+    <img src="../images/marleftlogopurp.png" />     
+</div>
+
+<div id="backstrokw">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rentals">
+<img src="../images/rentbut.png" onclick="MM_goToURL('parent','../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../images/repairsBut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../images/cvBut.png" onclick="MM_goToURL('parent','../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../images/merchbut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../images/questBut.png" onclick="MM_goToURL('parent','../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../images/articlesBut.png" onclick="MM_goToURL('parent','../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../images/contactBut.png" onclick="MM_goToURL('parent','../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../images/subContact.png" />
+</div>
+
+<!--<div class="blankContent" style="width:930px; height:570px; ">-->
+		       
+               
+	<ul class='kwicks kwicks-vertical'>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li><img src="../images/ourshop/dahon.jpg"/></li>						 					<li><img src="../images/ourshop/nirve2.jpg" /></li>				 					<li><img src="../images/ourshop/accesories.jpg" /></li>
+                </ul>
+            </li>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li><img src="../images/ourshop/ezpedaler.jpg" /></li>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                    <li><img src="../images/ourshop/scooters.jpg" /></li>
+                </ul>
+            </li>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li><img src="../images/ourshop/bionx.jpg" /></li>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                </ul>
+            </li>
+            <li>
+                <ul class='kwicks kwicks-horizontal'>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                    <li><img src="../images/ourshop/rentals.jpg" /></li>
+                </ul>
+            </li>
+        </ul>
+			
+
+</div><!--	qaf_content-->
+
+
+
+
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>
+</div>
+</div>   <!--wrapper-->
+</body>
+
+
+</html>

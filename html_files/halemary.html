@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+ <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/tabs.css" />
+
+
+        
+<link href="../../css_files/greenpedals.css" rel="stylesheet" type="text/css" />
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+<link rel="stylesheet" href="../../css_files/menu_style.css" type="text/css" />
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+
+
+
+
+
+<style type="text/css">
+<!--
+
+
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+.bkg_gray{
+	width:930px;
+	margin: 0 auto;
+	
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../images/pic here);
+	position: absolute;
+	height: 634px;
+	width: 936px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+/*#footer {
+	background-color: #5F0ABC;
+
+	position: absolute;
+	left:0px;
+	width: 1100px;
+	top: 702px;
+	height: 40px;
+}
+*/
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar">
+    <img src="../images/marleftlogopurp.png" />
+    
+    
+</div>
+
+<div id="backstrokw">
+
+<div id="rentals">
+<img src="../images/rentbut.png" onclick="MM_goToURL('parent','../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../images/repairsBut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../images/cvBut.png" onclick="MM_goToURL('parent','../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../images/merchbut.png" onclick="MM_goToURL('parent','../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../images/questBut.png" onclick="MM_goToURL('parent','../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../images/articlesBut.png" onclick="MM_goToURL('parent','../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../images/contactBut.png" onclick="MM_goToURL('parent','../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../images/subContact.png" />
+</div>
+
+		         <div style="width:575px; float:left; background-color:#FFF; color:#333; padding-bottom:20px">
+               <div style="background:#C7CED1; height:20px; padding-top:10px; padding-left:10px"><a href="../../products.html">Products</a> | <a href="../../brands/ezee.html"> eZee</a> | <span class="current"> Sprint</span> </div>
+               
+               <div style="width:225px;float:left;"><img src="../../images/products/electric/ezee/sprint-1.jpg" alt="sprint" height="141" width="199">
+               
+               </div>
+               <h3><br>
+                 Sprint</h3>
+               <p>The Sprint is immensely popular with both ladies and gents. It's been designed primarily for your daily commuting comfort and pleasure. The high torque motor powers the front while the rear internal gears change speedily and silently without a hitch, ensuring an easy ride in any scenario.</p>
+               <p><strong>Our Price: $1,944</strong></p>
+               </div>
+                              <!--style="float:right; margin-right:30px; background-color:#FFF" -->
+               <div id="other_products">
+                 <div style="background:#C7CED1; height:20px; padding-top:10px; padding-left:10px">Other Ezee Products</div>
+                 <div>
+				 <p><a href="../ezee/forza.html"><img src="../../images/products/electric/ezee/forzo.s.png" alt="forzo" height="88" width="114"><br>Forza</a></p>
+                 <p><a href="../ezee/quando.html"><img src="../../images/products/electric/ezee/Quando.png" alt="chopper" height="88"><br>Quando</a></p>
+                 <p><a href="../ezee/cadence.html"><img src="../../images/products/electric/ezee/cadence-1.jpg" alt="e-zee" height="100"><br>Cadence</a></p>
+				              
+                 
+                 
+                  
+               <p><!--<a href="../ezee/cadence.html"><img src="../images/products/electric/ezee/cadence-1.jpg" height="100" alt="e-zee" />Cadence</a>--></p>
+                   <p></p>
+                 </div>
+               </div>
+              
+
+               <div style="width:575px; float:left; margin-top:20px; color:#333;">
+       <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">                
+<ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+ 
+	<li aria-selected="true" aria-labelledby="ui-id-1" aria-controls="tabs-1" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-1">Features</a></li> 
+	<li aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-2">Specifications</a></li> 
+    <li aria-selected="false" aria-labelledby="ui-id-3" aria-controls="tabs-3" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-3">Warranty</a></li> 
+    <li aria-selected="false" aria-labelledby="ui-id-4" aria-controls="tabs-4" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-4">Links</a></li> 
+</ul> 
+<!-- tab "panes" --> 
+<div class="panes" style="background:#FFF; margin-left:1px"> 
+
+	<div aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" id="tabs-1">
+	  <ul>
+	    <li>Stepthrough frame is classic looking and easy to mount </li>
+           <li>Several modes of riding allow you to choose how much work you're doing</li>
+           <li>Simple and versitile seven speed system</li>
+           <li>Standard high power light, cyclometer, rear rack and fender</li>
+           <li>Lightweight build gets 30 miles on a single charge </li>
+            
+	    </ul>
+	</div>
+    <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" id="tabs-2" style="height: 200px; overflow: auto; display: none;">
+      <ul class="spec_col">
+<li><strong>Components:</strong></li>
+            <li> <strong>Frame</strong>-6061 Aluminium Alloy T4 T6</li>
+            <li> <strong>Tyres</strong>-26" Schwalbe Marathon Plus with Kevlar guard &amp; relfective band</li>
+             <li><strong>Rim</strong>-Weinmann, Al Alloy double wall, CNC sidewall</li>
+           <li>  <strong>Spokes-</strong>13G Stainless steel</li>
+            <li><strong> Brakes (Front)-</strong>Shimano BRM 549 mechanical disc brakes</li>
+<li><strong>Brakes (Rear)-</strong>Shimano Nexus Roller brake</li>
+            <li> <strong>Gears-</strong>Shimano Nexus Inter 7 speeds</li>
+     <li>       <strong> Front fork-</strong>Suspension front fork with Al Alloy crown 50mm travel</li>
+   <li>          <strong>Handlebars-</strong>Al. Alloy</li>
+          <li>  <strong> Chainguard-</strong>Polycarbonate</li>
+             <li><strong>Mudguard-</strong>Polycarbonate with stainless steel supports</li>
+             <li><strong>Chainwheel-</strong>Al Alloy chainring and crank, 48T</li>
+             <li><strong>Chain-</strong>KMD Rust resistant</li>
+             <li><strong>Stand-</strong>Al Alloy central support stand</li>
+             <li><strong>Rear Carrier-</strong>Al Alloy</li><li>strong<br>
+               <strong>Seat post</strong>-Steel with suspension, flipable for battery removal</li>
+             <li><strong>Lighting-</strong>	Super White LED front and red LED rear, powered by main battery</li>
+        
+      </ul>
+      <ul class="spec_col">
+         <li><strong>Electric System</strong></li>
+               <li><strong>Motor-</strong> Nominal rated 200W (AU, SG, NZ), 250W (EU), 350W (USA) Brushless DC hub motor with planetary gears. Peak wattage up to 700W Controller PWM microprocessor and LED self diagnostic system. Overload protection 20 Amps, Underv voltage protection 31.5 V. E-Bike, Pedal Assist, Dual Mode options available</li>
+               <li><strong>Battery-</strong> 37V 10Ah Lithium Ion Polymer battery 3.1 kgs</li>
+               <li><strong>Charger-</strong> 2 amps smart charger. Maximum charge time 5.5 hours</li>
+               <li><strong>Performance-</strong> Maximum Speed 25km/h (EU), 20 miles (USA)</li>
+               <li><strong>Range-</strong> ~ 45 kms (28 miles) on Ebike mode, 50 ~ 80 kms on Pedal Assist Mode</li>
+               <li><strong>Bike weight-</strong> 23 kgs, 50 lbs</li>
+             </ul>
+             
+    </div> 
+        <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" id="tabs-3" style="height: 200px; overflow: auto; display: none;">
+        
+     <p>The bike is guaranteed for 2 years, this comprises of the frame, fork, all
+mechanical and electrical parts, except normal wear and tear items.
+1 year for the battery up to 70% depth of discharge from its original rated
+capacity. This can be verfied by the eZee dealer youíve purchased the bike from.</p>
+        
+        </div>  
+
+    <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" id="tabs-4">Manufacturers website:<br>
+     <a href="http://www.ezeebike.com/Sprint_product.htm"> http://www.ezeebike.com/Sprint_product.htm</a><p></p>
+      
+     
+              </div>
+</div> 
+  </div>
+               </div>
+		       <!-- End Right Column -->
+			   
+		   <div class="clear"></div>
+         
+                 </div>
+                              <!--style="float:right; margin-right:30px; background-color:#FFF" -->
+		       
+
+</div>
+
+
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>
+</div>
+</div>
+</body>
+
+
+</html>
