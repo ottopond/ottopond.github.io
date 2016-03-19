@@ -200,7 +200,7 @@ body {
 #productsWindow {
 	background-image:url(/images/race2.png);
 	position: absolute;
-	height: 634px;
+	/*height: 634px;*/
 	width: 936px;
 	top: 68px;
 	background-repeat: no-repeat;
