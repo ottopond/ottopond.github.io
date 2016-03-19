@@ -196,6 +196,16 @@ body {
 	background-repeat: no-repeat;
 	left: 170px;
 }
+
+#productsWindow {
+	background-image:url(../images/newIndex4.png);
+	position: absolute;
+	height: 634px;
+	width: 936px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
 /*#footer {
 	background-color: #5F0ABC;
 
