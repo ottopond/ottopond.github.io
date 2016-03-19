@@ -188,7 +188,7 @@ body {
 }
 /*BACKGROUND PHOTO HERE*/
 #mainWindow {
-	background-image:url(../images/newIndex4.png);
+	background-image:url(/images/newIndex4.png);
 	position: absolute;
 	height: 634px;
 	width: 936px;
@@ -198,7 +198,7 @@ body {
 }
 
 #productsWindow {
-	background-image:url(../images/race.jpg);
+	background-image:url(/images/race2.jpg);
 	position: absolute;
 	height: 634px;
 	width: 936px;
