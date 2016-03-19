@@ -54,18 +54,19 @@ body {
 	width: 170px;
 	float: left;
 }
+
 #rightcolumn {
-	margin-left:40px;
+	float: right;
 	color: #333;
 	margin: 0px;
 	padding: 0px;
-	width: 930px;
-	
+	width: 798px;
 	display: inline;
 	position: relative;
 	padding-left:50px;
 	z-index:1
 }
+
 #footer {
 	width: 968px;
 	clear: both;
