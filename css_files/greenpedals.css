@@ -316,10 +316,10 @@ background-color: #666;
 }
 
 #other_products {
-float:left; 
+float:right; 
 margin-left:30px; 
 background-color:#FFF; 
-width: 160px;
+width: 170px;
 }
 
 #other_products img { 
