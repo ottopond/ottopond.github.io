@@ -203,6 +203,12 @@ background-color: #666;
 	display: block;
 	top:12px;
 }*/
+.productsContent1 {
+    height: 768px;
+    width: 908px;
+    display: block;
+    background-color: #330067;
+}
 
 .shopContent {
 	background-image: url(file:///C|/Users/Geoffrey/website%20backup%20jun21/new10/new/images/shop_bkg.jpg);
