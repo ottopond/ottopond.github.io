@@ -52,7 +52,7 @@ body {
 	height: 30px;
 	width: 150px;
 	left: 4px;
-	top: 5px;
+	top: 15px;
 }
 
 
@@ -70,7 +70,7 @@ body {
 	height: 30px;
 	width: 150px;
 	left:128px;
-	top: 5px;
+	top: 15px;
 }
 
 #subMerch {
@@ -87,7 +87,7 @@ body {
 	height: 30px;
 	width: 70px;
 	left: 312px;
-	top: 5px;
+	top: 15px;
 }
 
 
@@ -105,7 +105,7 @@ body {
 	height: 30px;
 	width: 70px;
 	left: 378px;
-	top: 5px;
+	top: 15px;
 }
 
 
@@ -121,7 +121,7 @@ body {
 	height: 30px;
 	width: 150px;
 	left:492px;
-	top: 5px;
+	top: 15px;
 }
 
 
@@ -140,7 +140,7 @@ body {
 	height: 30px;
 	width: 150px;
 	left: 621px;
-	top: 5px;
+	top: 15px;
 }
 
 
@@ -159,7 +159,7 @@ body {
 	height: 30px;
 	width: 150px;
 	left: 687px;
-	top: 5px;
+	top: 15px;
 }
 
 #subVideos{
@@ -170,14 +170,12 @@ body {
 	
 }
 
-
-
 #contact {
 	position: absolute;
 	height: 30px;
 	width: 150px;
 	left: 795px;
-	top: 5px;
+	top: 15px;
 }
 
 #subContact{
