@@ -51,8 +51,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 10px;
-	top: 15px;
+	left: 4px;
+	top: 5px;
 }
 
 
@@ -69,8 +69,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left:145px;
-	top: 15px;
+	left:128px;
+	top: 5px;
 }
 
 #subMerch {
@@ -86,25 +86,26 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 70px;
-	left: 324px;
-	top: 15px;
+	left: 312px;
+	top: 5px;
 }
 
 
 #subRental {
-	visibility: hidden;
+	
 	position: absolute;
 	height: 30px;
 	width: 334px;
 	left: 0px;
+	visibility: hidden;
 }
 
 #repairs {
 	position: absolute;
 	height: 30px;
 	width: 70px;
-	left: 384px;
-	top: 15px;
+	left: 378px;
+	top: 5px;
 }
 
 
@@ -119,8 +120,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left:487px;
-	top: 15px;
+	left:492px;
+	top: 5px;
 }
 
 
@@ -138,8 +139,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 624px;
-	top: 15px;
+	left: 621px;
+	top: 5px;
 }
 
 
@@ -157,8 +158,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 686px;
-	top: 15px;
+	left: 687px;
+	top: 5px;
 }
 
 #subVideos{
@@ -175,8 +176,8 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 788px;
-	top: 15px;
+	left: 795px;
+	top: 5px;
 }
 
 #subContact{
