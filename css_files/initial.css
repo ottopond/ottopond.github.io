@@ -1,4 +1,3 @@
-
 body {	
 	background-color:#DAD3FE;
 }
@@ -187,10 +186,10 @@ body {
 }
 /*BACKGROUND PHOTO HERE*/
 #mainWindow {
-	background-image:url(/images/newIndex4.png);
+	background-image:url(/images/spacesaver.png);
 	position: absolute;
-	height: 634px;
-	width: 936px;
+	height: 638px;
+	width: 970px;
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -228,8 +227,10 @@ body {
 }
 
 
-
-
+#falsefooter{
+	top:60px;
+	height:10px;
+}
 
 #tinyLogo{
 	position:absolute;
@@ -237,4 +238,3 @@ body {
 	left:205px;
 	
 }
-
