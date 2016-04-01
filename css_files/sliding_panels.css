@@ -34,31 +34,31 @@ a, a:visited { color: #00f; }
 	border-top-color: #CCC;
 	border-bottom-color: #CCC;
 	padding-left: 15px;
-	-webkit-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	border: 1px solid #000;
 }
 
 .sp .tabs span:first-child {
 	padding-left: 15px;
-	-webkit-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	border: 1px solid #000;
 }
 
 .sp .tabs span:last-child {
 	padding-right: 15px;
-	-webkit-border-top-right-radius: 12px;
-	-moz-border-radius-topright: 12px;
-	border-top-right-radius: 12px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius: 6px;
 	
 }
 

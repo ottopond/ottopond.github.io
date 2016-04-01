@@ -1,5 +1,6 @@
+
 body {	
-	background-color:#DAD3FE;
+	background-color:#F0E7F5;
 }
 
 
@@ -39,8 +40,11 @@ body {
 #backstrokw {
 	background-color:#DAD3FE;
 	position: absolute;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
 	height: 68px;
-	width:930px;
+	width:929px;
 	left:170px;
 	top: 0px;
 	z-index:10;
@@ -50,7 +54,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 4px;
+	left: 6px;
 	top: 15px;
 }
 
@@ -68,7 +72,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left:128px;
+	left:130px;
 	top: 15px;
 }
 
@@ -85,7 +89,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 70px;
-	left: 312px;
+	left: 314px;
 	top: 15px;
 }
 
@@ -103,7 +107,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 70px;
-	left: 378px;
+	left: 380px;
 	top: 15px;
 }
 
@@ -119,7 +123,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left:492px;
+	left:494px;
 	top: 15px;
 }
 
@@ -138,7 +142,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 621px;
+	left: 623px;
 	top: 15px;
 }
 
@@ -157,7 +161,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 687px;
+	left: 689px;
 	top: 15px;
 }
 
@@ -173,7 +177,7 @@ body {
 	position: absolute;
 	height: 30px;
 	width: 150px;
-	left: 795px;
+	left: 797px;
 	top: 15px;
 }
 
@@ -185,25 +189,211 @@ body {
 	
 }
 /*BACKGROUND PHOTO HERE*/
-#mainWindow {
-	background-image:url(/images/spacesaver.png);
+
+#mainWindowComeVisit {
+	background-image:url(../images/mapman318B.jpg));
 	position: absolute;
-	height: 638px;
-	width: 970px;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
 }
 
-#productsWindow {
-	background-image:url(/images/race2.png);
+
+
+
+#mainWindowBlank {
+	background-image:url(../images/spacesaver.png);
 	position: absolute;
-	/*height: 634px;*/
-	width: 936px;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
 }
+
+#mainWindowIndex {
+	background-image:
+	url(../images/newIndex4.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+#mainWindowCV {
+	background-image:
+	url(../images/mapman318.jpg);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowWestAnnapolis {
+	background-image:
+	url(../images/mapmanleft320.jpg);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+	
+}
+
+#mainWindowGreenburyPoint {
+	background-image:url(../images/greenBuryPointImageForMainWindow.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowBaltandAnnapTrail {
+	background-image: url(../images/baltAndAnnapTrailImage.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+#mainWindowProducts {
+	background-image:url(../images/products2016bkg.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+#mainWindowRentals {
+	background-image:url(../images/rentalrates.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+#mainWindowRepairs {
+	background-image:url(../images/repairs.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+
+#mainWindowArticles {
+	background-image:
+	url(../images/articlesBkg.png);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowFAQ {
+	background-image:url(../images/bubbles8.jpg);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowVideo {
+	background-image:url(../images/video_bkg.jpg);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowContactUs {
+	background-image:url(../images/contact_bkg.jpg);
+	position: absolute;
+	height: 634px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+
 /*#footer {
 	background-color: #5F0ABC;
 
@@ -227,14 +417,14 @@ body {
 }
 
 
-#falsefooter{
-	top:60px;
-	height:10px;
-}
+
+
 
 #tinyLogo{
 	position:absolute;
 	top:162px;
 	left:205px;
 	
+
 }
+
