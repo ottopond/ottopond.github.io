@@ -300,7 +300,7 @@ body {
 
 
 #mainWindowProducts {
-	background-image:url(../images/products2016bkg.png);
+	background-image:url('/images/race2.png');
 	position: absolute;
 	height: 634px;
 	width: 929px;
