@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+
+
+
+<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
+<script type="text/javascript">
+
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+</script>
+
+
+
+
+ <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/tabs.css" />
+
+
+        
+<link href="../../css_files/greenpedals.css" rel="stylesheet" type="text/css" />
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+<link rel="stylesheet" href="../../css_files/menu_style.css" type="text/css" />
+
+<style type="text/css">
+<!--
+
+
+
+#wrapper {
+
+	width: 1100px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
+
+
+
+
+.bkg_gray{
+	width:930px;
+	margin: 0 auto;
+	
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	height: 68px;
+	width:930px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 10px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:145px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 324px;
+	top: 15px;
+}
+
+
+#subRental {
+	visibility: hidden;
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 384px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:487px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 624px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 686px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 788px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+#mainWindow {
+	background-image:url(../../images/race.jpg);
+	position: absolute;
+	height: 630px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+/*#footer {
+	background-color: #5F0ABC;
+
+	position: absolute;
+	left:0px;
+	width: 1100px;
+	top: 702px;
+	height: 40px;
+}
+*/
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+}
+#wrapper #mainWindow #rightcolumn div .panes div div .spec_col li {
+	padding-top: 6px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div h3 {
+	padding-top: 6px;
+	padding-bottom: 3px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div p {
+	padding-bottom: 3px;
+}
+#wrapper #mainWindow #rightcolumn div .panes div div ul {
+	list-style-type: disc;
+	float: none;
+}
+
+
+
+
+-->
+</style>
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+
+<div class="leftBar">
+    <img src="../../images/marleftlogopurp.png" />
+    
+    
+</div>
+
+<div id="backstrokw">
+
+<div id="rentals">
+<img src="../../images/rentbut.png" onclick="MM_goToURL('parent','../../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
+</div>
+
+<div id="repairs">
+<img src="../../images/repairsBut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
+</div>
+
+
+<div id="cv">
+<img src="../../images/cvBut.png" onclick="MM_goToURL('parent','../../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
+</div>
+
+<div id="merch">
+<img src="../../images/merchbut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
+</div>
+
+
+<div id="quests">
+<img src="../../images/questBut.png" onclick="MM_goToURL('parent','../../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
+</div>
+
+
+<div id="articles">
+<img src="../../images/articlesBut.png" onclick="MM_goToURL('parent','../../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
+</div>
+
+<div id="videos">
+<img src="../../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
+
+</div>
+
+<div id="contact">
+<img src="../../images/contactBut.png" onclick="MM_goToURL('parent','../../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
+</div>
+
+</div>
+
+
+<div id="mainWindow">
+
+
+    
+<div id="subcv">
+<img src="../../images/subComeVisit.png" />
+</div>
+
+<div id="subMerch">
+<img src="../../images/subMerch.png" />
+</div>
+
+
+<div id="subRental">
+<img src="/images/subRental.png" />
+</div>
+
+
+<div id="subRepairs">
+<img src="../../images/subRepairs.png" />
+</div>
+
+
+<div id="subQuestions">
+<img src="../../images/subQuestions.png" />
+</div>
+
+
+<div id="subArticles">
+<img src="../../images/subArticles.png" />
+</div>
+
+
+<div id="subVideos">
+<img src="../../images/subVideos.png" />
+</div>
+
+
+<div id="subContact">
+<img src="../../images/subContact.png" />
+</div>
+
+<div class="productsContent1" id="rightcolumn" style="padding-top:30px">
+		         <div style="background-color:#FFF; width:600px; float:left; width:600px; padding-left:10px;
+                  padding-top:10px; padding-bottom:20px">
+               <div style= height:20px; padding-top:10px;  padding-left:10px"><a href="../../products.html">Products</a> | <a href="Felt-Bosch_allProducts.html"> Felt-Bosch Models</a> | <span class="current"> Sport 95-e</span> </div>
+                              
+
+               <img src="../../images/felt_95_mid.png" width="301" height="214" />
+               <div style="width:250px; float:right; color:#333;  padding-bottom:20px">            
+               
+               
+        
+             
+               
+               <h3><br />
+                Sport 95-e</h3>
+                <br/> 
+                <br/>
+               <p>As a step through or standard diamond frame, the sport 95-e is a well balanced bike for bot errands and long rides.</p>
+              <br/><br/> <p>Price $3,699.00</p>
+
+
+               </div></div>
+<div>
+<div style="padding-right:60px">
+               <div id="other_products">
+                 <div style="background:#C7CED1; height:30px; padding-top:10px; padding-left:10px">Other Felt-Bosch Products</div>
+                 <div>
+                 
+ 			<p><a href="Nine-E_20.html">
+<img src="../../images/felt_Nine-E-20_thumb.png" width="121" height="86" alt="Nine-E" />Nine-e 20</a></p>
+                
+
+				<p> <a href="FeltLebowsk-e.html">
+<img src="../../images/felt_lebowski_thumb.png" width="120" height="86"  />Lebowsk-e</a></p>
+
+
+ 			<p><a href="FeltDualE.html">
+  
+
+<img src="../../images/felt_Duel-e_thumb.png" width="120" height="86" />  Dual-e</a></p>         
+	
+    
+    <p><a href="FeltVersat-e.html">
+    <img src="../../images/felt_Versa-e_thumb.png" width="121" height="86" alt="Versa-e" />Versa-e</a></p>
+               
+                  
+ <br/>
+                 
+                 
+        </div>         
+                  
+               
+                   <p></p>
+                 </div>
+               </div>
+              
+
+               <div style="width:600px; float:left; margin-top:20px; color:#333;">
+               
+               <ul class="tabs">
+ 
+	<li><a href="#first" class="w1">Features</a></li> 
+	<li><a href="#second" class="w1">Specifications</a></li> 
+    <li><a href="#third" class="w1">Warranty</a></li> 
+    <li><a href="#fourth" class="w1">Links</a></li> 
+</ul> 
+ 
+<!-- tab "panes" --> 
+<div class="panes" style="background:#FFF; margin-left:1px"> 
+
+	<div>
+    
+   A commuting and fitness machine, the Felt SPORTe is the ultimate bike to get you around town with pleasing speed and ease. With everything a rider needs for swift commutes, running errands or cycling adventures, the SPORTe comes in traditional and step-through designs to fit all types of riders. Skip the traffic without breaking a sweat, grab a SPORTe. (Accessory rack, light, and fender kit available for aftermarket purchase.)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div style="height:200px; overflow:auto;" >
+      <ul class="spec_col">
+<li><strong>Components</strong>
+
+ <li><strong>Frame:</strong>Felt Electric Fitness/Commuter, Bosch-specific, double-butted 6061 aluminum, Hydroform down tube, Dynaform seat & chain stays, ControlTaper headtube, integrated kickstand & Basta lock mount, full internal cable routing, disc-brake specific, lighting wires pre-installed</li>
+
+<li><strong>Fork:</strong>Felt rigid Hydroformed 6061 aluminum blades, aluminum tapered steerer, disc-brake specific, eyeleted/li>
+
+<li><strong>Battery:</strong>  Bosch 400Wh frame type battery pack</li>
+
+<li><strong>Sizes</strong>n/a</li>
+
+<li><strong>Weight:</strong>n/a</li>
+
+<li><strong>Finish:</strong>n/a</li>
+
+<li><strong>Shock:</strong>n/a</li> 
+
+<li><strong>Headset:</strong>FSA No. 42 1.125" - 1.5" integrated Aheadset: ACB water sealed bearings, w/ Felt Tornado aluminum top cap, custom, custom 1 x 15mm curved, 3 x 5mm & 1 x 10mm straight washers</li>
+
+<li><strong>Stem:</strong>Felt SL design 3D-forged aluminum w/ 4-bolt handlebar clamp, 1-1/8" threadless: Ø31.8mm handlebar, 7° rise, w/ black Cr-Mo hardware 44cm = 70mm, 48cm = 80mm, 52cm = 90mm, 55cm = 100mm, 58cm = 110mm</li>
+
+<li><strong>Handlebar:</strong>Felt 6061 double-butted aluminum flat bar: Ø31.8mm, 9° sweep 44 - 48cm = 620mm width, 52 - 58cm = 640mm width</li>
+
+<li><strong>Grips::</strong>Felt ergo grip dual-density Kraton rubber, wing-style, w/ bar ends</li>
+
+<li><strong>Bar Ends:</strong>Felt F-Wing end plugs		</li>
+
+<li><strong>Shifters:</strong>n/a</li>
+
+<li><strong>Front Derailleur:</strong>n/a	</li>
+
+ <li><strong>Rear Derailleur:</strong>Shimano Deore XT RD-M781-SGS Shadow: long cage</li>
+
+<li><strong>Crankset:</strong>Felt Electric Bosch-specific crankset, forged aluminum, 18T cog w/ chain cover: 44 - 48cm = 170mm, 52 - 58cm = 175mm</li>
+
+<li><strong>	Chainwheel		</strong>	n/a		</li>
+
+<li><strong>Chainguide:</strong>n/a</li>
+
+<li><strong>Bottom Bracket:</strong>Bosch Performance eDrive Unit, 350W output, 20 mph </li>
+
+<li><strong>Pedals:</strong>VP-615 Felt design, low profile body, PP cage & body, taper head Cr-Mo axle</li>
+
+<li><strong>Chain:</strong>Shimano CN-HG54</li> 
+
+<li><strong>Freewheel:</strong>Shimano CS-HG 62 10-speed cassette, 11-32T </li>
+
+<li><strong>Brake Levers:</strong>Shimano BL-M615 hydraulic</li>
+
+<li><strong>Brakes:</strong>Shimano BR-M615 hydraulic:160mm Centerlock rotor</li>
+
+<li><strong>Cables:	</strong>Custom Felt internally routed shift cables w/ CNC aluminum ferrules</li>
+
+<li><strong>Saddle:	</strong>Selle Royal LookIn Athletic gel</li>
+
+<li><strong>Seat Post:</strong>Felt twin clamp micro-adjust 6061 aluminum, Ø27.2mm x 300mm</li>
+
+<li><strong>Seat Post Clamp:</strong>Felt bolt-type 6061 aluminum w/ Cr-Mo bolt, Ø31.8mm</li>
+
+<li><strong>Rims:</strong>Shimano WH-RX05 wheelset: 28H clincher rims front & rear, Centerlock hubs w/Shimano Quick Release Lever</li>
+
+<li><strong>Front Hub:</strong>Shimano WH-RX05, 28H: Centerlock disc mount w/Shimano QR lever </li>
+
+<li><strong>Rear Hub:</strong>Shimano WH-RX05, 10-speed cassette 28H rear: Centerlock disc mount w/Shimano QR lever </li>
+
+<li><strong>Spokes:</strong>Shimano WH-RX05</li>
+
+<li><strong>Tires:</strong>Schwalbe Energizer KevlarGuard, reflective sidewall, 700x38c w/ presta valve tubes</li>
+
+<li><strong>Fenders:</strong>(Optional) Felt QX style fenders: w/stainless hardware</li>
+
+<li><strong>Kickstand:</strong>Felt KSA 40 style kickstand: rear dropout mount/li>
+
+<li><strong>Accessories:</strong>Battery: Bosch 400Wh frame type battery pack/ Light System: / Carrier: / Accessories:</li>
+
+ 
+      </ul>
+      
+             
+    </div> 
+        <div style=" height: 200px;
+	overflow: auto;">
+        
+ <h3>Warranty</h3>
+
+<p>NOTE: This warranty is for the USA only and is not intended for any other country or market. For the details of Felt's warranty in any country or market outside of the USA please contact the Felt distributor in that particular country or market.</p>
+
+<h3>Felt Racing LLC Limited, Lifetime Warranty</h3>
+
+<p><strong>All Felt frames and forks on Felt adult bicycles and bicycle framesets</strong> (Road, Triathlon, Speed, MTB, Cruisers, Comfort), except Shot models, <strong>are warranted to be free from manufacturing defects in material and/or workmanship for the lifetime of the original owner.</strong> Shot model bicycles (Jump Shot, Straight Shot, Double Shot, Dual Shot) are warranted to be free from manufacturing defects in material and/or workmanship for two (2) years from the date of original purchase.<strong> Warranty coverage on Bosch components and batteries extends for two (2) years from the date of original purchase. </strong>Warranty coverage on bicycle components and finish (excluding tires, tubes and cables) extends for one (1) year from the date of original purchase. Warranty coverage of front suspension forks, rear shocks, brand name wheel sets, and some components will be covered by the warranty stated by their original manufacturers. This Warranty applies only to the original owner and does not transfer to subsequent owners.
+</p>
+<h3>Free Assembly and Check-Up</h3>
+
+<p><strong>Within thirty (30) days after your frameset is assembled into a bicycle, you may return your Felt bicycle to the authorized  Felt dealer from whom you bought it for a free check-up and adjustment.</strong></p>
+
+
+<h3>This Warranty Does Not Cover</h3>
+
+<ul>
+ 
+
+ <li>Any damage resulting from normal wear and tear, including the results of fatigue. It is the owner’s responsibility to inspect his or her bicycle before each and every ride.</li>
+ 
+<li>Any damage, failure or loss caused by abuse, neglect, improper repair, improper maintenance, alteration, modification, failure to follow instructions or warnings in owner’s manual, an accident or other abnormal, excessive, or improper use, including, but not limited to, stunt riding, ramp jumping, acrobatics or other similar activities, or in any other manner for which the bicycle was not designed.</li>
+
+ <li>   Any bicycle or frameset purchased by mail order or via the internet.
+    </li>
+<li>    The original owner shall pay all labor charges connected with the repair or replacement of the frame. Cost of shipment or transportation to or from an authorized Felt dealer or Felt are specifically excluded and not covered by this Warranty.</li>
+    
+<li>    Assembly and adjustment of the frameset and component parts must be completed by an authorized Felt dealer or Felt or other outlets specifically authorized by Felt to distribute Felt bicycles. Framesets and/or bicycles which are not assembled and adjusted either by an authorized Felt dealer or Felt or other outlets specifically authorized by Felt are specifically excluded and not covered by this Warranty.</li>
+
+ 
+</ul>
+<h3>Useful Product Life Cycle</h3>
+
+   <ul>
+<li> Every Felt frameset has a useful life cycle. This useful life cycle is not the same as the Warranty period.</li>
+ 
+<li>    This Warranty is not meant to suggest or imply that the frame cannot be broken or will last forever. Bicycles and/or frames will not last forever. The length of the useful life cycle will vary depending on the type of frame, riding conditions and care the bicycle receives.</li>
+    
+<li>    Competition, jumping, downhill racing, trick riding, trial riding, riding in severe conditions or climates, riding with heavy loads or any other non-standard use can substantially shorten the useful product life cycle of a Felt frameset. Any one or a combination of these conditions may result in an unpredictable failure of a Felt frameset that would not be covered by this Warranty.</li>
+    <p>
+    </p>
+<li>    All Felt framesets should be periodically checked by an authorized Felt dealer for indications of potential failures including cracks, corrosion, dents, deformation, paint peeling and any other indications of potential problems, inappropriate use or abuse. These are important safety checks and very important to help prevent accidents, bodily injury to the rider and shortened useful product life cycle of a Felt frameset.</li>
+
+</ul>
+<h3>Limitations</h3>
+
+    THERE ARE NO WARRANTIES WHICH EXTEND BEYOND THE DESCRIPTION ON THE FACE OF THIS LIMITED WARRANTY, AND ANY OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE, ARE EXPRESSLY EXCLUDED BY THE TERMS OF THIS LIMITED WARRANTY.
+    FELT SHALL IN NO EVENT BE LIABLE FOR INCIDENTAL OR CONSEQUENTIAL LOSSES, DAMAGES OR EXPENSES IN CONNECTION WITH ITS BICYCLE PRODUCTS. FELT’S LIABILITY HEREUNDER IS EXPRESSLY LIMITED TO THE REPLACEMENT OF GOODS NOT COMPLYING WITH THIS WARRANTY OR, AT FELT’S ELECTION, TO THE REPAYMENT OF AN AMOUNT EQUAL TO THE PURCHASE PRICE OF THE PRODUCT IN QUESTION.
+    Some states do not permit the exclusion or limitation of implied warranties or consequential damages, so the preceding limitations and exclusions may not apply to you.
+
+
+<h3>Felt Racing LLC, VIP Replacement Program</h3>
+
+For those occasions where a damaged Felt product is not covered under warranty, Felt offers the Felt VIP Replacement Program to help alleviate the hardship of replacing a Felt bicycle or frameset. All Felt bicycles and bicycle framesets are covered under the Felt VIP Program for the lifetime of the original owner. The Felt VIP Replacement Program is a significant discount off of the purchase of a new bicycle or frame kit. The program is available through any authorized Felt dealer or other outlets specifically authorized by Felt to distribute Felt Bicycles. This program applies only to the original owner and does not transfer to subsequent owners. For additional information, please contact your local authorized Felt dealer.
+Procedures
+
+    For any claim to be considered, the bicycle must be brought into an authorized Felt dealer in assembled condition and accompanied by the original, dated sales receipt for the bicycle or frameset. (Be sure to keep your receipt in a safe place.).
+    Warranty service will be performed by an authorized Felt dealer. Proof of purchase must be provided. Cost of shipment or transportation to and from Felt, and the Felt authorized dealer is the responsibility of the purchaser.
+    Felt will have the option of either repair or replacement for any defective product. In the event Felt elects to replace a defective frame, a new frame of equal or greater value will be provided. The new frame may not be the exact model purchased.
+    If you elect to repair a defective product yourself or use the services of someone other than an authorized Felt dealer, or if you use a replacement part not supplied by Felt, Felt will not be liable for any damage, failure or loss caused by the use of such unauthorized service or parts.
+    This Warranty gives you specific legal rights and you may also have other rights which may vary from state to state.
+     
+     </div>   
+   
+      
+      
+      <div>
+      
+      
+     <p>
+ 
+      
+     <div> <a href="http://feltbicycles.com/USA.aspx">
+      <p> Manufacturer's website:  </p></a>
+        <a href="http://feltbicycles.com/USA/2016/Bikes/electric/road/Sport-e-95-Step-Thru-2.aspx">
+        <p>Felt's Sport 95-e webpage</p>  </a>
+      
+        <a href="http://feltbicycles.com/USA/Single-Nav/Inside-Felt/Media/Tech-and-Story-Videos.aspx"><p>Felt's Video Page</p>
+       </a>
+       <p>Click tile "FELT ELECTRIC SPORTE"</p>
+        </div>
+        
+        
+        
+
+    <div><br />
+    
+    </a></div>
+   <div>
+   
+  
+   </div>
+   
+   
+     
+      
+     
+            </div>
+</div> 
+  </div>
+               </div>
+</div>
+
+<!--
+<div id="footer">
+© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
+</div>-->
+</div>
+</div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
