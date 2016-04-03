@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #bigmap {
-	background-image:url(.//images/bigmaptwo.png);
+	background-image:url('/images/bigmaptwo.png');
 	height:550px;
 	width:350px;
 	margin-top:0px;
