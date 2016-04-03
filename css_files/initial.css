@@ -204,7 +204,7 @@ body {
 }
 
 #mainWindowShop {
-	background-image:url(../images/mapman318B.jpg));
+	background-image:url('images/storefront.png');
 	position: absolute;
 	height: 634px;
 	width: 929px;
