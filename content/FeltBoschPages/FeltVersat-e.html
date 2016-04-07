@@ -1,479 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0053)http://www.green-pedals.com/products/ezee/sprint.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
+<title>Green Pedals - Felt Versa-e</title>
+<!--link rel="stylesheet" href="/scripts/menu_style.css" type="text/css"-->
+<script src="/scripts/dreamweaver_mm_functions.js"></script>
+<link rel="stylesheet" type="text/css" href="/css_files/initial.css" />
+<link rel="stylesheet" type="text/css" href="/css_files/products.css" />
+<link href="/css_files/greenpedals.css" rel="stylesheet" type="text/css">
+<!-- begin code for tabs -->
+<link rel="stylesheet" href="/css_files/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" async="" src="/scripts/ga.js"></script>
 
-
-
-
-<!--THIS IS THE SCRIPT THAT MAKES THE SUB-TAB BUTTONS WORK-->
-<script type="text/javascript">
-
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-function MM_goToURL() { //v3.0
-  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
-  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
-}
-
+<script>
+$(function() {
+$( "#tabs" ).tabs();
+});
 </script>
 
-
-
-
- <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script> 
-
-<link rel="stylesheet" type="text/css" href="http://static.flowplayer.org/css/tabs.css" />
-
-
-        
-<link href="../../css_files/greenpedals.css" rel="stylesheet" type="text/css" />
-        
-        
-        
-        
-
-        
-        
-        
-        
-
-<link rel="stylesheet" href="../../css_files/menu_style.css" type="text/css" />
-
-<style type="text/css">
-<!--
-
-
-
-#wrapper {
-
-	width: 1100px;
-	position: relative;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
-}
-
-
-
-
-
-
-.bkg_gray{
-	width:930px;
-	margin: 0 auto;
-	
-}
-
-.leftBar {margin:0px;
-			padding:0px;
-			position:relative;
-			
-			width:170px;
-		
-			
-			
-}
-
-
-
-#backstrokw {
-	background-color:#DAD3FE;
-	position: absolute;
-	height: 68px;
-	width:930px;
-	left:170px;
-	top: 0px;
-	z-index:10;
-}
-
-#cv {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left: 10px;
-	top: 15px;
-}
-
-
-
-#subcv {
-	position: absolute;
-	height: 30px;
-	width: 334px;
-	left: 0px;
-	visibility: hidden;	
-}
-
-#merch {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left:145px;
-	top: 15px;
-}
-
-#subMerch {
-	position: absolute;
-	height: 30px;
-	width: 334px;
-	left: 0px;
-	visibility: hidden;
-}
-
-
-#rentals {
-	position: absolute;
-	height: 30px;
-	width: 70px;
-	left: 324px;
-	top: 15px;
-}
-
-
-#subRental {
-	visibility: hidden;
-	position: absolute;
-	height: 30px;
-	width: 334px;
-	left: 0px;
-}
-
-#repairs {
-	position: absolute;
-	height: 30px;
-	width: 70px;
-	left: 384px;
-	top: 15px;
-}
-
-
-#subRepairs {
-	position: absolute;
-	height: 30px;
-	left: 0px;
-	visibility: hidden;
-}
-
-#quests {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left:487px;
-	top: 15px;
-}
-
-
-#subQuestions {
-	position: absolute;
-	height: 30px;
-	width: 334px;
-	left: 0px;
-	visibility: hidden;
-}
-
-
-
-#articles {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left: 624px;
-	top: 15px;
-}
-
-
-#subArticles{
-	position: absolute;
-	height: 30px;
-	visibility: hidden;
-	left: 0px;
-	
-}
-
-
-
-#videos {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left: 686px;
-	top: 15px;
-}
-
-#subVideos{
-	position: absolute;
-	height: 30px;
-	visibility: hidden;
-	left: 0px;
-	
-}
-
-
-
-#contact {
-	position: absolute;
-	height: 30px;
-	width: 150px;
-	left: 788px;
-	top: 15px;
-}
-
-#subContact{
-	position: absolute;
-	height: 30px;
-	visibility: hidden;
-	left: 0px;
-	
-}
-/*BACKGROUND PHOTO HERE*/
-#mainWindow {
-	background-image:url(../../images/race.jpg);
-	position: absolute;
-	height: 630px;
-	width: 930px;
-	top: 68px;
-	background-repeat: no-repeat;
-	left: 170px;
-}
-
-/*#footer {
-	background-color: #5F0ABC;
-
-	position: absolute;
-	left:0px;
-	width: 1100px;
-	top: 702px;
-	height: 40px;
-}
-*/
-
-#wrapper #footer {
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 14px;
-	color: #FFF;
-	background-color: #5F0ABC;
-	text-align: right;
-	text-indent: 20px;
-	padding: 10px;
-	height:26px;
-}
-
-
-
-
-
-#tinyLogo{
-	position:absolute;
-	top:162px;
-	left:205px;
-	
-}
-#wrapper #mainWindow #rightcolumn div .panes div div .spec_col li {
-	padding-top: 6px;
-	padding-right: 0px;
-	padding-bottom: 3px;
-	padding-left: 0px;
-}
-#wrapper #mainWindow #rightcolumn div .panes div div h3 {
-	padding-top: 6px;
-	padding-bottom: 3px;
-}
-#wrapper #mainWindow #rightcolumn div .panes div div p {
-	padding-bottom: 3px;
-}
-#wrapper #mainWindow #rightcolumn div .panes div div ul {
-	list-style-type: disc;
-	float: none;
-}
-
-
-
-
--->
-</style>
-
+<!-- Google Analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16808695-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
-
 <body>
-
-
-
-<div id="wrapper">
-
-<div class="leftBar"><img src="../../images/marleftlogopurp.png" /></div>
-
+   <!-- Begin Wrapper -->
+   <div id="wrapper">
+<div class="leftBar">
+   <a href="/index.html"><img src="/images/marleftlogopurp.png"/></a>
+   <div style="height:46px;margin-top:-4px;background-color: #5F0ABC;"></div>
+</div>
 <div id="backstrokw">
-
-<div id="rentals">
-<img src="../../images/rentbut.png" onclick="MM_goToURL('parent','../../html_files/goodRentals.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" />
-</div>
-
-<div id="repairs">
-<img src="../../images/repairsBut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" />
-</div>
-
-
-<div id="cv">
-<img src="../../images/cvBut.png" onclick="MM_goToURL('parent','../../html_files/goodComeVisit.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" />
-</div>
-
-<div id="merch">
-<img src="../../images/merchbut.png" onclick="MM_goToURL('parent','../../html_files/goodRepairs.html');  return document.MM_returnValue" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" />
-</div>
-
-
-<div id="quests">
-<img src="../../images/questBut.png" onclick="MM_goToURL('parent','../../html_files/goodFAQ.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" />
-</div>
-
-
-<div id="articles">
-<img src="../../images/articlesBut.png" onclick="MM_goToURL('parent','../../html_files/goodArticles.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" />
-</div>
-
-<div id="videos">
-<img src="../../images/videosBut.png" onclick="MM_goToURL('parent','http://green-pedals.com/electric_bike_video.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" />
-
-</div>
-
-<div id="contact">
-<img src="../../images/contactBut.png" onclick="MM_goToURL('parent','../../html_files/goodContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" />
-</div>
-
-</div>
-
-
-<div id="mainWindow">
-
-
+<div id="rentals"><a href="/Rentals.html"><img src="/images/rentBut4.png" onmouseover="MM_showHideLayers('subRental','','show')" onmouseout="MM_showHideLayers('subRental','','hide')" /></a></div>
     
-<div id="subcv">
-<img src="../../images/subComeVisit.png" />
+	<div id="repairs"><a href="/Repairs.html"><img src="/images/repairsBut4.png" onmouseover="MM_showHideLayers('subRepairs','','show')" onmouseout="MM_showHideLayers('subRepairs','','hide')" /></a></div>
+    
+	<div id="cv"><a href="/ComeVisit.html"><img src="/images/cvBut4.png" onmouseover="MM_showHideLayers('subcv','','show')" onmouseout="MM_showHideLayers('subcv','','hide')" /></a></div>
+    
+	<div id="merch"><a href="/Products.html"><img src="/images/merchBut4.png" onmouseover="MM_showHideLayers('subMerch','','show')" onmouseout="MM_showHideLayers('subMerch','','hide')" /></a></div>
+    
+	<div id="quests"><a href="/FAQ.html"><img src="/images/questBut4.png" onmouseover="MM_showHideLayers('subQuestions','','show')" onmouseout="MM_showHideLayers('subQuestions','','hide')" /></a></div>
+    
+	<div id="articles"><a href="/Articles.html"><img src="/images/articlesBut4.png" onmouseover="MM_showHideLayers('subArticles','','show')" onmouseout="MM_showHideLayers('subArticles','','hide')" /></a></div>
+    
+	<div id="videos"><a href="/VideosPage.html"><img src="/images/videosBut4.png" onmouseover="MM_showHideLayers('subVideos','','show')" onmouseout="MM_showHideLayers('subVideos','','hide')" /></a></div>
+    
+	<div id="contact"><a href="/ContactUs.html"><img src="/images/contactBut4.png" onclick="MM_goToURL('parent','/ContactUs.html');return document.MM_returnValue" onmouseover="MM_showHideLayers('subContact','','show')" onmouseout="MM_showHideLayers('subContact','','hide')" /></a></div>
+
 </div>
-
-<div id="subMerch">
-<img src="../../images/subMerch.png" />
-</div>
-
-
-<div id="subRental">
-<img src="/images/subRental.png" />
-</div>
-
-
-<div id="subRepairs">
-<img src="../../images/subRepairs.png" />
-</div>
-
-
-<div id="subQuestions">
-<img src="../../images/subQuestions.png" />
-</div>
-
-
-<div id="subArticles">
-<img src="../../images/subArticles.png" />
-</div>
-
-
-<div id="subVideos">
-<img src="../../images/subVideos.png" />
-</div>
-
-
-<div id="subContact">
-<img src="../../images/subContact.png" />
-</div>
-
-<div class="productsContent1" id="rightcolumn" style="padding-top:30px">
-		         <div style="background-color:#FFF; width:600px; float:left; width:600px; padding-left:10px;
-                  padding-top:10px; padding-bottom:20px">
-               <div style= height:20px; padding-top:10px;  padding-left:10px"><a href="../../products.html">Products</a> | <a href="Felt-Bosch_allProducts.html"> Felt-Bosch Models</a> | <span class="current"> Versa-e</span> </div>
+<div id="mainWindowProducts">
+<div id="productsWindow">
+         <!-- Begin Faux Columns -->
+		 <div id="faux">
+		 
+		       <!-- Begin Right Column -->
                
-
-<img src="../../images/felt_Versa-e_mid.png" width="301" height="214" />
-
+		       <div class="productsContent1" id="rightcolumn" style="padding-top:20px">
+		         <div style="width:605px; float:left; background-color:#FFF; color:#333; padding-bottom:20px">
+               <div style="background:#C7CED1; height:20px; padding-top:10px; padding-left:10px"><a href="/Products.html">Products</a> | <a href="/content/FeltBoschPages/Felt-Bosch_allProducts.html"> Felt-Bosch Models</a> | <span class="current"> Versa-e</span> </div>
                
-   <div style="width:250px; float:right; color:#333;  padding-bottom:20px">            
+               <img style="float:left;margin-left:15px;margin-right:25px;" src="/images/felt_Versa-e_mid.png" /> 
                
-               
-            
-             
-               
-               <h3><br />
-                Versa-e</h3>
-                <br/> 
+               <br/>
+              <br/>                
+               <h3><br />Versa-e</h3>
+              <br/>
+              <br/>
+               <p>A civilized option for getting around.  Step through model for easy mounting</p>
+               <br/>
                 <br/>
-               <p>Versa-e's distinguished look and step through frame is perfect for city riding but is light, fast and responsive for long rides. </p><br /><br />
+               <p>Price $3699.00</p>
 
-<p>Price: $3,699.00</p>
-               </div></div>
-<div>
-<div style="padding-right:60px">
+               </div>
+                              
                <div id="other_products">
-                 <div style="background:#C7CED1; height:30px; padding-top:10px; padding-left:10px">Other Felt-Bosch Products</div>
+                 <div style="background:#C7CED1; height:20px; padding-top:10px; padding-left:10px">Other Felt-Bosch Products</div>
                  <div>
-                 <p><a href="FeltSport-e_95.html">
-<img src="../../images/felt_95_thumb.png" width="120" height="86" alt="Felt Sport-e 95"   />Sport-e 95</a></p>
+				  <p><a href="FeltSport-e_95.html">
+<img src="/images/felt_95_thumb.png" width="120" height="86" alt="Felt Sport-e 95"   />
+<br />FeltSport-e 95</a></p>
                 
 
-				<p> <a href="FeltDualE.html">
-<img src="../../images/felt_Duel-e_thumb.png" width="120" height="86" />Dual-e</a></p>
+                  <p>
+                    				<p> <a href="FeltDualE.html">
+<img src="/images/felt_Duel-e_thumb.png" width="120" height="86" />
+<br />Dual-e</a></p>
+</p>
+
+     <p><a href="FeltLebowsk-e.html">
+<img src="/images/felt_lebowski_mid.png"  width="121" height="86" alt="Lebowski" />
+<br />Lebowsk-e</a></p>
 
 
- 			<p><a href="Nine-E_20.html">
-<img src="../../images/felt_Nine-E-20_thumb.png" width="121" height="86" alt="Nine-E" />Nine-e 20</a></p>  
+                  <p><a href="Nine-E_20.html">
+  <img src="/images/felt_Nine-E-20_thumb.png" width="121" height="86" alt="Nine-E" />
+  <br />Nine-e 20</a></p>  
 
            
-	<p><a href="FeltLebowsk-e.html">
-
-        <img src="../../images/felt_lebowski_thumb.png" width="120" height="86" /> Lebowsk-e</a></p>      
-                  
- <br/>
-               
-               
-                </div>
-                 <p></p>
-        </div>
-</div>
+<!--	<p><a href="FeltVersat-e_.html">
+<img src="/images/felt_Versa-e_thumb.png" width="121" height="86" alt="Versa-e" />
+<br />Versa-e</a></p>-->
+<br />
+        <br />       
+                 </div>
+               </div>
               
 
-               <div style="width:600px; float:left; margin-top:20px; color:#333;">
-               
-               <ul class="tabs">
+               <div style="width:605px; float:left; margin-top:20px; color:#333;">
+       <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">                
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
  
-	<li><a href="#first" class="w1">Features</a></li> 
-	<li><a href="#second" class="w1">Specifications</a></li> 
-    <li><a href="#third" class="w1">Warranty</a></li> 
-    <li><a href="#fourth" class="w1">Links</a></li> 
+	<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true"><a href="/content/FeltBoschPages/FeltVersa.html#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Features</a></li> 
+	<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false"><a href="/content/FeltBoschPages/FeltVersa.html#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Specifications</a></li> 
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false"><a href="/content/FeltBoschPages/FeltVersa.html#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Warranty</a></li> 
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-4" aria-labelledby="ui-id-4" aria-selected="false"><a href="/content/FeltBoschPages/FeltVersa.html#tabs-4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Links</a></li> 
 </ul> 
- 
 <!-- tab "panes" --> 
 <div class="panes" style="background:#FFF; margin-left:1px"> 
 
-	<div>
-    
+	<div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
 The VERZAe combines stable handling, elegant design and modern components that are rarely found in step-through electric bicycles. The result is a fantastic urban bike suitable for comfortable commuting, recreation, grocery shopping, and more. The VERZAe is a long-lasting transportation tool: a true alternative to driving.
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div style="height:200px; overflow:auto;" >
+	</div>
+    <div id="tabs-2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true">
+
       <ul class="spec_col">
 <li><strong>Components</strong>
            <li><strong>Frame:</strong>coming...</li>
@@ -528,12 +189,11 @@ The VERZAe combines stable handling, elegant design and modern components that a
 <li><strong>	Kickstand:</strong>n/a/li>
 <li><strong>Accessories:</strong>Battery: Bosch 400Wh frame type battery pack/ Light System: / Carrier: / Accessories:</li> 
       </ul>
-      
-             
-    </div> 
-        <div style=" height: 200px;
-	overflow: auto;">
         
+    </div> 
+        <div id="tabs-3" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true">
+        
+             
  <h3>Warranty</h3>
 
 <p>NOTE: This warranty is for the USA only and is not intended for any other country or market. For the details of Felt's warranty in any country or market outside of the USA please contact the Felt distributor in that particular country or market.</p>
@@ -552,9 +212,9 @@ The VERZAe combines stable handling, elegant design and modern components that a
 <ul>
  
 
- <li>Any damage resulting from normal wear and tear, including the results of fatigue. It is the ownerâ€™s responsibility to inspect his or her bicycle before each and every ride.</li>
+ <li>Any damage resulting from normal wear and tear, including the results of fatigue. It is the owner’s responsibility to inspect his or her bicycle before each and every ride.</li>
  
-<li>Any damage, failure or loss caused by abuse, neglect, improper repair, improper maintenance, alteration, modification, failure to follow instructions or warnings in ownerâ€™s manual, an accident or other abnormal, excessive, or improper use, including, but not limited to, stunt riding, ramp jumping, acrobatics or other similar activities, or in any other manner for which the bicycle was not designed.</li>
+<li>Any damage, failure or loss caused by abuse, neglect, improper repair, improper maintenance, alteration, modification, failure to follow instructions or warnings in owner’s manual, an accident or other abnormal, excessive, or improper use, including, but not limited to, stunt riding, ramp jumping, acrobatics or other similar activities, or in any other manner for which the bicycle was not designed.</li>
 
  <li>   Any bicycle or frameset purchased by mail order or via the internet.
     </li>
@@ -580,7 +240,7 @@ The VERZAe combines stable handling, elegant design and modern components that a
 <h3>Limitations</h3>
 
     THERE ARE NO WARRANTIES WHICH EXTEND BEYOND THE DESCRIPTION ON THE FACE OF THIS LIMITED WARRANTY, AND ANY OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE, ARE EXPRESSLY EXCLUDED BY THE TERMS OF THIS LIMITED WARRANTY.
-    FELT SHALL IN NO EVENT BE LIABLE FOR INCIDENTAL OR CONSEQUENTIAL LOSSES, DAMAGES OR EXPENSES IN CONNECTION WITH ITS BICYCLE PRODUCTS. FELTâ€™S LIABILITY HEREUNDER IS EXPRESSLY LIMITED TO THE REPLACEMENT OF GOODS NOT COMPLYING WITH THIS WARRANTY OR, AT FELTâ€™S ELECTION, TO THE REPAYMENT OF AN AMOUNT EQUAL TO THE PURCHASE PRICE OF THE PRODUCT IN QUESTION.
+    FELT SHALL IN NO EVENT BE LIABLE FOR INCIDENTAL OR CONSEQUENTIAL LOSSES, DAMAGES OR EXPENSES IN CONNECTION WITH ITS BICYCLE PRODUCTS. FELT’S LIABILITY HEREUNDER IS EXPRESSLY LIMITED TO THE REPLACEMENT OF GOODS NOT COMPLYING WITH THIS WARRANTY OR, AT FELT’S ELECTION, TO THE REPAYMENT OF AN AMOUNT EQUAL TO THE PURCHASE PRICE OF THE PRODUCT IN QUESTION.
     Some states do not permit the exclusion or limitation of implied warranties or consequential damages, so the preceding limitations and exclusions may not apply to you.
 
 
@@ -594,88 +254,37 @@ Procedures
     Felt will have the option of either repair or replacement for any defective product. In the event Felt elects to replace a defective frame, a new frame of equal or greater value will be provided. The new frame may not be the exact model purchased.
     If you elect to repair a defective product yourself or use the services of someone other than an authorized Felt dealer, or if you use a replacement part not supplied by Felt, Felt will not be liable for any damage, failure or loss caused by the use of such unauthorized service or parts.
     This Warranty gives you specific legal rights and you may also have other rights which may vary from state to state.
-     
-     </div>   
-   
-      
-      
-      <div>
-      
-      
-     <p>
- 
-      
-     <div> <a href="http://"feltbicycles.com/USA.aspx">
-      <p> Manufacturer's website:  </p></a>
-        <a href=http://"feltbicycles.com/USA/2016/Bikes/electric/road/verzae-30.aspx">
-        <p>Felt's Lebowsk-e webpage</p>  </a>
-      
         
-        
-        
-        </div>
+        </div>  
 
-    <div><br />
+    <div id="tabs-4" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true">
     
-    </a></div>
-   <div>
-   
-  
-   </div>
-   
-   
+ <a href="http://feltbicycles.com/USA.aspx">
+       <p> Manufacturer's website:  </p></a>
+ <a href=http://"feltbicycles.com/USA/2016/Bikes/electric/road/verzae-30.aspx">
+        <p>Felt's Versa-e webpage</p>  </a>
      
-      
-     
-            </div>
+              </div>
 </div> 
   </div>
                </div>
+		       <!-- End Right Column -->
+			   
+		   <div class="clear"></div>
+         </div>	   
+         <!-- End Faux Columns --> 
+
+   </div>
+<!-- End Wrapper -->
+   <!-- This JavaScript snippet activates the tabs --> 
+<script> 
+ 
+// perform JavaScript after the document is scriptable.
+$(function() {
+	// setup ul.tabs to work as tabs for each div directly under div.panes
+	$("ul.tabs").tabs("div.panes > div");
+});
+</script> 
+
 </div>
-
-<!--
-<div id="footer">
-Â© 2015 GreenPedals | 105 B Annapolis St, Annapolis, MD 21401 | 410-280-5005
-</div>-->
-</div>
-</div>
-</body>
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div></body></html>
