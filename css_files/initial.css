@@ -193,7 +193,7 @@ body {
 #mainWindowComeVisit {
 	background-image:url(../images/mapman318B.jpg));
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -206,7 +206,7 @@ body {
 #mainWindowShop {
 	background-image:url('/images/storefront.png');
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -219,7 +219,7 @@ body {
 #mainWindowBlank {
 	background-image:url(../images/spacesaver.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -233,7 +233,7 @@ body {
 	background-image:
 	url(../images/newIndex4.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -247,7 +247,7 @@ body {
 	background-image:
 	url(../images/mapman318.jpg);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -271,9 +271,9 @@ body {
 }
 
 #mainWindowGreenburyPoint {
-	background-image:url(../images/greenBuryPointImageForMainWindow.png);
+	background-image:url(../images/greenBuryPointImageForMainWindowWF.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -287,7 +287,7 @@ body {
 #mainWindowBaltandAnnapTrail {
 	background-image: url(../images/baltAndAnnapTrailImage.png);
 	position: absolute;
-	height: 634px;
+	height: 664px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -302,7 +302,7 @@ body {
 #mainWindowProducts {
 	background-image:url('/images/race2.png');
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -317,7 +317,7 @@ body {
 #mainWindowRentals {
 	background-image:url(../images/rentalrates.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -332,7 +332,7 @@ body {
 #mainWindowRepairs {
 	background-image:url(../images/repairs.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -349,7 +349,7 @@ body {
 	background-image:
 	url(../images/articlesBkg.png);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -363,7 +363,7 @@ body {
 #mainWindowFAQ {
 	background-image:url(../images/bubbles8.jpg);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -377,7 +377,7 @@ body {
 #mainWindowVideo {
 	background-image:url(../images/video_bkg.jpg);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
@@ -391,7 +391,7 @@ body {
 #mainWindowContactUs {
 	background-image:url(../images/contact_bkg.jpg);
 	position: absolute;
-	height: 634px;
+	height: 678px;
 	width: 929px;
 	border-right-color:#5F0ABC;
 	border-right-width:1px;
