@@ -2,12 +2,14 @@
 
 function Geoff_show(page) {
 	
-	$("#BPanels1").hide("slide", {direction:'left'}, 500);
-	$("#BPanels2").hide("slide", {direction:'left'}, 500);
-	$("#BPanels3").hide("slide", {direction:'left'}, 500);
-	$("#BPanels4").hide("slide", {direction:'left'}, 500);
-	$("#BPanels5").hide("slide", {direction:'left'}, 500);
-	$("#BPanels6").hide("slide", {direction:'left'}, 500);
+	$("#BPanels1").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	$("#BPanels2").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	$("#BPanels3").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	$("#BPanels4").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	$("#BPanels5").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	$("#BPanels6").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	
+	
 /*	var element1 = document.getElementById("BPanels1");
 	element1.style.display = 'none';
 	var element2 = document.getElementById("BPanels2");
@@ -24,7 +26,7 @@ function Geoff_show(page) {
 //	var element = document.getElementById("BPanels"+page.toString());
 //	element.style.display = 'block';
 	
-	$("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500);
+//	$("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500);
 	
 	return false;
 };
