@@ -16,7 +16,7 @@ function Geoff_show(page,direction,oldpage) {
 		d2 = 'left';
 	}
 	
-	var element1 = document.getElementById("BPanels1");
+/*	var element1 = document.getElementById("BPanels1");
 	element1.style.display = 'none';
 	var element2 = document.getElementById("BPanels2");
 	element2.style.display = 'none';
@@ -27,7 +27,7 @@ function Geoff_show(page,direction,oldpage) {
 	var element5 = document.getElementById("BPanels5");
 	element5.style.display = 'none';
 	var element6 = document.getElementById("BPanels6");
-	element6.style.display = 'none';
+	element6.style.display = 'none';*/
 
 
 	if(oldpage==1)
