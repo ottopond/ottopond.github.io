@@ -18,7 +18,7 @@ function Geoff_show(page) {
 //	var element = document.getElementById("BPanels"+page.toString());
 //	element.style.display = 'block';
 	
-	$("#BPanels"+page.toString()).show("slide", options, 500, callback );
+	$("#BPanels"+page.toString()).show("slide", {}, 500);
 	
 	return false;
 };
