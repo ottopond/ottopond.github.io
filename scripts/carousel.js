@@ -2,7 +2,13 @@
 
 function Geoff_show(page) {
 	
-	var element1 = document.getElementById("BPanels1");
+	$("#BPanels1").hide("slide", {}, 500);
+	$("#BPanels2").hide("slide", {}, 500);
+	$("#BPanels3").hide("slide", {}, 500);
+	$("#BPanels4").hide("slide", {}, 500);
+	$("#BPanels5").hide("slide", {}, 500);
+	$("#BPanels6").hide("slide", {}, 500);
+/*	var element1 = document.getElementById("BPanels1");
 	element1.style.display = 'none';
 	var element2 = document.getElementById("BPanels2");
 	element2.style.display = 'none';
@@ -14,7 +20,7 @@ function Geoff_show(page) {
 	element5.style.display = 'none';
 	var element6 = document.getElementById("BPanels6");
 	element6.style.display = 'none';
-	
+*/	
 //	var element = document.getElementById("BPanels"+page.toString());
 //	element.style.display = 'block';
 	
