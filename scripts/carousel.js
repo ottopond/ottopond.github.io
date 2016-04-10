@@ -1,13 +1,29 @@
 // JavaScript Document
 
-function Geoff_show(page) {
+function Geoff_show(page,direction) {
 	
-	$("#BPanels1").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
-	$("#BPanels2").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
-	$("#BPanels3").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
-	$("#BPanels4").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
-	$("#BPanels5").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
-	$("#BPanels6").hide("slide", {direction:'left'}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:'left'}, 500); });
+	var d1;
+	var d2;
+	
+	if(direction)
+	{
+		d1 = 'left';
+		d2 = 'right';
+	}
+	else
+	{
+		d1 = 'right';
+		d2 = 'left';
+	}
+	
+	
+	
+	$("#BPanels1").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
+	$("#BPanels2").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
+	$("#BPanels3").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
+	$("#BPanels4").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
+	$("#BPanels5").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
+	$("#BPanels6").hide("slide", {direction:d1}, 500, function () { $("#BPanels"+page.toString()).show("slide", {direction:d2}, 500); });
 	
 	
 /*	var element1 = document.getElementById("BPanels1");
