@@ -15,8 +15,10 @@ function Geoff_show(page) {
 	var element6 = document.getElementById("BPanels6");
 	element6.style.display = 'none';
 	
-	var element = document.getElementById("BPanels"+page.toString());
-	element.style.display = 'block';
+//	var element = document.getElementById("BPanels"+page.toString());
+//	element.style.display = 'block';
+	
+	$("#BPanels"+page.toString()).show("slide", options, 500, callback );
 	
 	return false;
 };
