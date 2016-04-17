@@ -59,9 +59,11 @@
 .leftColumn {
 	float:left;
 	width:400px;
+	margin:20px;
 }
 
 .rightColumn {
+	margin:20px;
 	float:right;
 	width:400px;
 	background-color:#FFF;
