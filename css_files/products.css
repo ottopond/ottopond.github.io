@@ -45,7 +45,9 @@
 	font-weight:bold;
 	border-radius:6px;
 	padding:10px;
-	font-family:Arial, Helvetica, sans-serif
+	font-family:Arial, Helvetica, sans-serif;
+	color:black;
+	text-decoration:none;
 }
 	
 .flexProducts {
@@ -60,8 +62,7 @@
 	width:170px;
 	height:150px;
 	overflow:auto;
-	color:black;
-	text-decoration:none;
+
 }
 
 .leftColumn {
