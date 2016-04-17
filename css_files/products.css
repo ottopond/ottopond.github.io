@@ -58,12 +58,12 @@
 
 .leftColumn {
 	float:left;
-	width:500px;
+	width:400px;
 }
 
 .rightColumn {
 	float:right;
-	width:500px;
+	width:400px;
 	background-color:#FFF;
 	border-radius:6px;
 }
