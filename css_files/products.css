@@ -66,7 +66,7 @@
 
 .leftColumn {
 	float:left;
-	width:400px;
+	width:380px;
 	margin:20px;
 	padding:10px;
 }
@@ -74,8 +74,8 @@
 .rightColumn {
 	margin:20px;
 	float:right;
-	width:400px;
+	width:410px;
 	background-color: #EAFFFF;
 	border-radius:6px;
-	padding:10px;
+	padding:14px;
 }
