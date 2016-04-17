@@ -62,12 +62,13 @@
 	float:left;
 	width:400px;
 	margin:20px;
+	padding:10px;
 }
 
 .rightColumn {
 	margin:20px;
 	float:right;
 	width:400px;
-	background-color:#FFF;
+	background-color: #EAFFFF;
 	border-radius:6px;
 }
