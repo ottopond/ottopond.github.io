@@ -26,7 +26,6 @@ a, a:visited { color: #00f; }
 	cursor: pointer;
 	position: relative;
 /*	color:#9E070C; COLOR THAT APPEARS ON SELECTED TAB */
-	font-weight:bold;
 	background-color:#EAFFFF;
 	border-top-width: 1px;
 	border-bottom-width: 1px;

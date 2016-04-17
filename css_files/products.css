@@ -28,3 +28,15 @@
 	overflow: auto;
 	display: none;
 }
+
+
+.flexProducts {
+	display:flex;
+}
+
+.flexProducts a {
+	text-align:center;
+	width:150px;
+	height:150px;
+	overflow:auto;
+}
