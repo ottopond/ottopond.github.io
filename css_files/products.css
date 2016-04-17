@@ -29,9 +29,22 @@
 	display: none;
 }
 
+.pageTitle{
+	font-size: 20px;
+	background-color: #EAFFFF;
+	font-weight::bold;
+}
 
+.productCategory {
+	margin:20px;
+	font-size: 16px;
+	background-color: #EAFFFF;
+	font-weight::bold;
+}
+	
 .flexProducts {
 	display:flex;
+	margin:20px;
 }
 
 .flexProducts a {
