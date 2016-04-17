@@ -8,13 +8,15 @@
 <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" /> 
 <script src="/scripts/dreamweaver_mm_functions.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script> 
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js" type="text/javascript"></script> 
-            
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/css_files/initial.css" />
+<!--link type="text/css" rel="stylesheet" href="/css_files/style_products_accordion.css" -->
+<link type="text/css" rel="stylesheet" href="/css_files/sliding_panels.css" />
+<script type="text/javascript" src="/scripts/sliding_panels.js"></script>
 
-<link type="text/css" rel="stylesheet" href="/css_files/style_products_accordion.css" />
 
-<script type="text/javascript">
+<!--script type="text/javascript">
 	$(function() {
 		$("#accordion").accordion({
 			collapsible: true,
@@ -22,9 +24,9 @@
 			autoHeight: false
 		});
 	});
-</script>
+</script-->
 
-<link rel="stylesheet" type="text/css" href="/css_files/initial.css" />
+
 
 </head>
 
@@ -100,16 +102,22 @@
 <img src="/images/subContact.png" />
 </div>
 
-
-<div style="width: 400px; margin-left:20px; margin-top:60px; list-style-type:none; list-style:none"> 
-               </div>
-<div class="demo" style="width: 400px; margin-left:20px; list-style-type:none; list-style:none">
-		       <div id="accordion">
-    <h3><a href="#">Electric Bikes</a></h3>
-		         <div>
-		           <div class="acc-section">
-		             <div class="acc-content">
-		               <ul>
+<div class="sp">
+			 <div class="tabs">
+                  <div class="tabstyle">
+					<span class="electricbikes">Electric Bikes</span>
+                	<span class="conversionkits">Conversion Kits</span>
+                	<span class="folding">Folding Bikes, Recumbents and Cargo</span>
+                	<span class="closeout">Close Out Sales</span>
+                </div>
+             </div>
+			 <div class="panel_container">
+				<div class="panels">
+					<div class="panel">
+						<div class="panel_content">
+                            <h2>Electric Bikes</h2>
+                            <p>
+                             <ul>
 		                 <li>
 		                   <h3 class="brand">
 						   <a 	href="/content/FeltBoschPages/Felt-Bosch_allProducts.html">			   						 Felt-Bosch</a></h3>
@@ -175,13 +183,16 @@
 	                     </li>
 						   
                          </li>
-	                  </ul></div></div></div>
-	                 
-		         <h3><a href="#">Conversion Kits</a></h3>
-		         <div>
-		           <div class="acc-section">
-		             <div class="acc-content">
-		               <ul>
+	                  </ul>
+                            </p> 
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+						<div class="panel_content">
+                            <h2>Conversion Kits</h2>
+                            <p>
+                            <ul>
 		                 <li>
 		                   <h3 class="brand">
                            <a href="/content/BionXPages/Bionx_allProducts.html">
@@ -283,15 +294,15 @@
 	                       </div>
 	                     </li>
 	                   </ul>
-	                 </div>
-	               </div>
-		           <p>&nbsp;</p>
-	             </div>
-		         <h3><a href="#">Folding Bikes, Recumbents and Cargo</a></h3>
-		         <div>
-		           <div class="acc-section">
-		             <div class="acc-content">
-		               <ul>
+                            </p> 
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+						<div class="panel_content">
+                            <h2>Folding Bikes, Recumbents and Cargo</h2>
+                            <p>
+                             <ul>
 		                 <li>
 		                   <h3 class="brand"><a href="/content/DahonPages/Dahon_All_Products.html">Dahon Folding Bikes</a></h3>
 		                
@@ -357,15 +368,15 @@
 	                       </div>
 	                     </li>
 	                   </ul>
-	                 </div>
-	               </div>
-		           <p>&nbsp;</p>
-	             </div>
-		         <h3><a href="#">Close Out Sales</a></h3>
-		         <div>
-		           <div class="acc-section">
-		             <div class="acc-content">
-		               <ul>
+                            </p> 
+                        </div>
+                    </div>
+                    
+                    <div class="panel">
+						<div class="panel_content">
+                            <h2>Close Out Sales</h2>
+                            <p>
+                            <ul>
 		                 <li>
 		                   <h3 class="brand"><a href="#">Altered</a></h3>
 		                   <div class="acc-section">
@@ -391,15 +402,16 @@
 	                       </div>
 	                     </li>
 	                   </ul>
-	                 </div>
-	               </div>
-	             </div>
-		        
-		         </div>
-		       </div>
-             
-		       <!-- End Right Column -->
-			   
+                            </p> 
+                        </div>
+                    </div>
+                    
+                </div>
+             </div>
+</div>
+            
+
+
 		   <div class="clear"></div>
 
 
