@@ -33,6 +33,7 @@
 	font-size: 20px;
 	background-color: #EAFFFF;
 	font-weight::bold;
+	border-radius:6px;
 }
 
 .productCategory {
@@ -40,6 +41,7 @@
 	font-size: 16px;
 	background-color: #EAFFFF;
 	font-weight::bold;
+	border-radius:6px;
 }
 	
 .flexProducts {
@@ -62,4 +64,6 @@
 .rightColumn {
 	float:right;
 	width:500px;
+	background-color:#FFF;
+	border-radius:6px;
 }
