@@ -619,10 +619,9 @@
 	left:205px;
 }
 
-body  {padding:0px;
-		margin:0px;
-		background-color:#F8F4FF;
-		
+body  {
+	padding:0px;
+	margin:0px;	
 }
 #wrapper #footer {
 	font-family: Tahoma, Geneva, sans-serif;
