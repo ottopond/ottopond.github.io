@@ -1,6 +1,6 @@
 
 body {	
-	background-color:#F0E7F5;
+	background-color:#FCFBFF;
 	margin-top:0px;
 	font-family:Verdana, Helvetica, Arial, sans-serif;
 }
@@ -9,6 +9,7 @@ body {
 #wrapper {
 
 	width: 1100px;
+	height:743px;
 	position: relative;
 	margin-top: 0px;
 	margin-right: auto;
@@ -42,11 +43,11 @@ body {
 #backstrokw {
 	background-color:#DAD3FE;
 	position: absolute;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
+	border-right-color:#999;
+	border-right-width:2px;
 	border-right-style:inset;
 	height: 68px;
-	width:929px;
+	width:928px;
 	left:170px;
 	top: 0px;
 	z-index:10;
@@ -247,13 +248,13 @@ body {
 
 #mainWindowCV {
 	background-image:
-	url(/images/mapman318.jpg);
+	url(/images/mapman318B.jpg);
 	position: absolute;
-	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
+	height: 675px;
+	width: 930px;
+/*	border-right-color:#5F0ABC;
 	border-right-width:1px;
-	border-right-style:inset;
+	border-right-style:inset;*/
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -264,7 +265,7 @@ body {
 	background-image:
 	url(/images/mapmanleft320.jpg);
 	position: absolute;
-	height: 630px;
+	height: 675px;
 	width: 930px;
 	top: 68px;
 	background-repeat: no-repeat;
@@ -305,13 +306,14 @@ body {
 	background-image:url('/images/race2.png');
 	position: absolute;
 	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
+	width: 930px;
+/*	border-right-color:#999;
+	border-right-width:2px;
+	border-right-style:outset;*/
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
+	
 }
 
 
@@ -321,7 +323,7 @@ body {
 	position: absolute;
 	height: 678px;
 	width: 929px;
-	border-right-color:#5F0ABC;
+	border-right-color:#CCC;
 	border-right-width:1px;
 	border-right-style:inset;
 	top: 68px;
@@ -336,12 +338,10 @@ body {
 	position: absolute;
 	height: 678px;
 	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
+	
 }
 
 
@@ -352,10 +352,8 @@ body {
 	url(/images/articlesBkg.png);
 	position: absolute;
 	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
+	width: 930px;
+
 	top:68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -363,13 +361,10 @@ body {
 
 
 #mainWindowFAQ {
-	background-image:url(/images/bubbles8.jpg);
+	background-image:url(/images/bubbles8.png);
 	position: absolute;
-	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
+	height: 675px;
+	width: 930px;
 	top:68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -379,11 +374,8 @@ body {
 #mainWindowVideo {
 	background-image:url(/images/video_bkg.jpg);
 	position: absolute;
-	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
+	height: 675px;
+	width: 930px;
 	top:68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -391,13 +383,11 @@ body {
 
 
 #mainWindowContactUs {
-	background-image:url(/images/contact_bkg.jpg);
+	background-image:url(/images/contact_bkg.png);
 	position: absolute;
-	height: 678px;
-	width: 929px;
-	border-right-color:#5F0ABC;
-	border-right-width:1px;
-	border-right-style:inset;
+	height: 675px;
+	width: 930px;
+
 	top:68px;
 	background-repeat: no-repeat;
 	left: 170px;
