@@ -49,7 +49,8 @@ h1 {
 .sp .tabs {
 	font-size: 18px;
 	/*color: #903;*/
-	color: #551A8B;
+	/*color: #551A8B;*/
+	color:#242493;
 	list-style-type: none;
 }
 
