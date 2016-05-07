@@ -17,7 +17,6 @@ body  {
 			list-style:none;			
 } 		
 
-
 h1 {
 	color: #C33;
 	height: 30px;
@@ -27,7 +26,7 @@ h1 {
 .faqTitle {
 	height:40px;
 	width:400px;
-	padding-top:8px;
+	padding-top:12px;
 	float:none;
 	z-index:50;
 	margin: 0px;
@@ -48,6 +47,9 @@ h1 {
 } 
 
 .sp .tabs {
+	font-size: 18px;
+	/*color: #903;*/
+	color: #551A8B;
 	list-style-type: none;
 }
 
@@ -74,11 +76,6 @@ h1 {
 	
 	padding-top:10px;
 	font-size: 18px;
-}
-
-.sp .tabs {
-	font-size: 18px;
-	color: #903;
 }
 
 .sp .panel_container .panels .panel .panel_content ul {
