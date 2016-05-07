@@ -17,11 +17,6 @@ body {
 	margin-left: auto;
 }
 
-
-
-
-
-
 .bkg_gray{
 	width:930px;
 	margin: 0 auto;
@@ -331,29 +326,21 @@ body {
 	left: 170px;
 }
 
-
-
 #mainWindowRepairs {
-	background-image:url(/images/repairs.png);
+	background-image: url('/images/repairs.png');
 	position: absolute;
 	height: 678px;
 	width: 929px;
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
-	
 }
 
-
-
-
 #mainWindowArticles {
-	background-image:
-	url(/images/articlesBkg.png);
+	background-image:url('/images/articlesBkg.png');
 	position: absolute;
 	height: 678px;
 	width: 930px;
-
 	top:68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -361,7 +348,7 @@ body {
 
 
 #mainWindowFAQ {
-	background-image:url(/images/bubbles8.png);
+	background-image:url('/images/bubbles8.png');
 	position: absolute;
 	height: 675px;
 	width: 930px;
@@ -372,7 +359,7 @@ body {
 
 
 #mainWindowVideo {
-	background-image:url(/images/video_bkg.jpg);
+	background-image:url('/images/video_bkg.jpg');
 	position: absolute;
 	height: 675px;
 	width: 930px;
