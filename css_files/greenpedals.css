@@ -325,6 +325,8 @@ float:right;
 margin-right:20px; 
 background-color:#FFF; 
 width: 275px;
+overflow:auto;
+max-height:566px;
 }
 
 #other_products img { 
