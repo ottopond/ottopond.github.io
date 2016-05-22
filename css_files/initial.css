@@ -227,6 +227,21 @@ body {
 	left: 170px;
 }
 
+
+#mainWindowOddProducts {
+	background-image:url(/product images by brand/Odd Products/attic Background.png>
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
 #mainWindowIndex {
 	background-image:
 	url(/images/newIndex4.png);
