@@ -189,7 +189,7 @@ body {
 /*BACKGROUND PHOTO HERE*/
 
 #mainWindowComeVisit {
-	background-image:url(/images/mapman318B.jpg));
+	background-image:url(/images/mapman318B.jpg);
 	position: absolute;
 	height: 678px;
 	width: 929px;
@@ -229,7 +229,7 @@ body {
 
 
 #mainWindowOddProducts {
-	background-image:url(/product images by brand/Odd Products/attic Background.png>
+	background-image:url('/product images by brand/Odd Products/attic Background.png');
 	position: absolute;
 	height: 678px;
 	width: 929px;
