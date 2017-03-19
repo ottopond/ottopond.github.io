@@ -75,7 +75,7 @@
 #greenPedalsShop	{
 	position:absolute;
 	font-size:12px;
-	left:90px;
+	left:180px;
 	top:145px;
 	width:180px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -509,12 +509,12 @@
 	border-right: 1px solid #1644BE;
 	border-bottom: 1px solid #1644BE;
 	border-top: 1px solid #1644BE;
-	-webkit-border-top-right-radius: 10px;
-	-moz-border-radius-topright: 10px;
-	border-top-right-radius: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-moz-border-radius-topleft: 10px;
-	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	border-top-left-radius: 6px;
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-left-radius: 10px;
@@ -538,7 +538,7 @@
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:11px;
 	top:214px;
-	left:200px;
+	left:250px;
 	text-align:center;
 	border-left: 1px solid #1644BE;
 	border-right: 1px solid #1644BE;
@@ -637,7 +637,7 @@ body  {
 
 #tinyLogo{
 	position:absolute;
-	top:162px;
+	top:132px;
 	left:205px;
 	
 }

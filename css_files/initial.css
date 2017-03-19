@@ -202,7 +202,7 @@ body {
 }
 
 #mainWindowShop {
-	background-image:url('/images/storefront2.png');
+	background-image:url('/content/OurShop/storefront2.jpg');
 	position: absolute;
 	height: 678px;
 	width: 929px;
@@ -244,7 +244,7 @@ body {
 
 #mainWindowIndex {
 	background-image:
-	url(/images/newIndex4.png);
+	url(../images/finalsale.png);
 	position: absolute;
 	height: 678px;
 	width: 929px;
@@ -255,6 +255,21 @@ body {
 	background-repeat: no-repeat;
 	left: 170px;
 }
+
+#mainWindowFinalSale {
+	background-image:url(/images/finalsale.png);
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
 
 #mainWindowCV {
 	background-image:
@@ -284,7 +299,7 @@ body {
 }
 
 #mainWindowGreenburyPoint {
-	background-image:url('/images/greenBuryPointImageForMainWindowWF.png');
+/*	background-image:url('/images/greenBuryPointImageForMainWindowWF.png');*/
 	position: absolute;
 	height: 678px;
 	width: 929px;
@@ -329,13 +344,13 @@ body {
 
 
 #mainWindowRentals {
-	background-image:url(/images/rentalrates.png);
+	background-image:url('/images/rentalrates.jpg');
 	position: absolute;
 	height: 678px;
 	width: 929px;
-	border-right-color:#CCC;
+/*	border-right-color:#CCC;
 	border-right-width:1px;
-	border-right-style:inset;
+	border-right-style:inset;*/
 	top: 68px;
 	background-repeat: no-repeat;
 	left: 170px;
@@ -351,8 +366,8 @@ body {
 	left: 170px;
 }
 
-#mainWindowArticles {
-	background-image:url('/images/articlesBkg.png');
+#mainWindowArticles {background-image:url('/images/articlesBkg.png');
+	
 	position: absolute;
 	height: 678px;
 	width: 930px;
@@ -361,7 +376,15 @@ body {
 	left: 170px;
 }
 
-
+#mainWindowFinalSale {background-image:url('/images/FinalSaleInventory2.png');
+	
+	position: absolute;
+	height: 678px;
+	width: 930px;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
 #mainWindowFAQ {
 	background-image:url('/images/bubbles8.png');
 	position: absolute;
@@ -395,7 +418,14 @@ body {
 	left: 170px;
 }
 
-
+#finalButton {
+	position: absolute;
+	left:490px;
+	top:500px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 22px;
+	color: #0000FF; 
+	}
 
 
 /*#footer {
@@ -421,13 +451,18 @@ body {
 }
 
 
-
+#inventorybutton  {
+	margin-top:490px;
+	margin-left:500px;
+	color:#06F;
+	
+	}
 
 
 #tinyLogo{
 	position:absolute;
-	top:162px;
-	left:205px;
+	top:145px;
+	left:225px;
 	
 
 }
