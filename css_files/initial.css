@@ -244,7 +244,7 @@ body {
 
 #mainWindowIndex {
 	background-image:
-	url(../images/finalsale.png);
+	url('/images/FinalSale/finalsale.jpg');
 	position: absolute;
 	height: 678px;
 	width: 929px;
@@ -257,7 +257,7 @@ body {
 }
 
 #mainWindowFinalSale {
-	background-image:url(/images/finalsale.png);
+	background-image:url('/images/finalsale.png');
 	position: absolute;
 	height: 678px;
 	width: 929px;
