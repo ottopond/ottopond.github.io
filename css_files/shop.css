@@ -1,0 +1,434 @@
+
+body {	
+	background-color:#FCFBFF;
+	margin-top:0px;
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+}
+
+
+#wrapper {
+
+	width: 1100px;
+	height:743px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.bkg_gray{
+	width:930px;
+	margin: 0 auto;
+	
+}
+
+.leftBar {margin:0px;
+			padding:0px;
+			position:relative;
+			
+			width:170px;
+		
+			
+			
+}
+
+
+
+#backstrokw {
+	background-color:#DAD3FE;
+	position: absolute;
+	border-right-color:#999;
+	border-right-width:2px;
+	border-right-style:inset;
+	height: 68px;
+	width:928px;
+	left:170px;
+	top: 0px;
+	z-index:10;
+}
+
+#cv {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 6px;
+	top: 15px;
+}
+
+
+
+#subcv {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;	
+}
+
+#merch {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:130px;
+	top: 15px;
+}
+
+#subMerch {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+#rentals {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 314px;
+	top: 15px;
+}
+
+
+#subRental {
+	
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#repairs {
+	position: absolute;
+	height: 30px;
+	width: 70px;
+	left: 380px;
+	top: 15px;
+}
+
+
+#subRepairs {
+	position: absolute;
+	height: 30px;
+	left: 0px;
+	visibility: hidden;
+}
+
+#quests {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left:494px;
+	top: 15px;
+}
+
+
+#subQuestions {
+	position: absolute;
+	height: 30px;
+	width: 334px;
+	left: 0px;
+	visibility: hidden;
+}
+
+
+
+#articles {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 623px;
+	top: 15px;
+}
+
+
+#subArticles{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+
+
+#videos {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 689px;
+	top: 15px;
+}
+
+#subVideos{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+
+#contact {
+	position: absolute;
+	height: 30px;
+	width: 150px;
+	left: 797px;
+	top: 15px;
+}
+
+#subContact{
+	position: absolute;
+	height: 30px;
+	visibility: hidden;
+	left: 0px;
+	
+}
+/*BACKGROUND PHOTO HERE*/
+
+#mainWindowComeVisit {
+	background-image:url(/images/mapman318B.jpg);
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+#mainWindowShop {
+	background-image:url('/images/storefront.png');
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+}
+
+
+#mainWindowBlank {
+	background-image:url(/images/spacesaver.png);
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowOddProducts {
+	background-image:url('/product images by brand/Odd Products/attic Background.png');
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowIndex {
+	background-image:
+	url(/images/newIndex4.png);
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+#mainWindowCV {
+	background-image:
+	url(/images/mapman318B.jpg);
+	position: absolute;
+	height: 675px;
+	width: 930px;
+/*	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;*/
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowWestAnnapolis {
+	background-image:
+	url(/images/mapmanleft320.jpg);
+	position: absolute;
+	height: 675px;
+	width: 930px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+	
+}
+
+#mainWindowGreenburyPoint {
+	background-image:url('/images/greenBuryPointImageForMainWindowWF.png');
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowBaltandAnnapTrail {
+	background-image: url('/images/baltAndAnnapTrailImage.png');
+	position: absolute;
+	height: 664px;
+	width: 929px;
+	border-right-color:#5F0ABC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+#mainWindowProducts {
+	background-image:url('/images/race2.png');
+	position: absolute;
+	height: 678px;
+	width: 930px;
+/*	border-right-color:#999;
+	border-right-width:2px;
+	border-right-style:outset;*/
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+	
+}
+
+
+
+#mainWindowRentals {
+	background-image:url(/images/rentalrates.png);
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	border-right-color:#CCC;
+	border-right-width:1px;
+	border-right-style:inset;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+#mainWindowRepairs {
+	background-image: url('/images/repairs.png');
+	position: absolute;
+	height: 678px;
+	width: 929px;
+	top: 68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+#mainWindowArticles {
+	background-image:url('/images/articlesBkg.png');
+	position: absolute;
+	height: 678px;
+	width: 930px;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowFAQ {
+	background-image:url('/images/bubbles8.png');
+	position: absolute;
+	height: 675px;
+	width: 930px;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowVideo {
+	background-image:url('/images/video_bkg.jpg');
+	position: absolute;
+	height: 675px;
+	width: 930px;
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+#mainWindowContactUs {
+	background-image:url(/images/contact_bkg.png);
+	position: absolute;
+	height: 675px;
+	width: 930px;
+
+	top:68px;
+	background-repeat: no-repeat;
+	left: 170px;
+}
+
+
+
+
+/*#footer {
+	background-color: #5F0ABC;
+
+	position: absolute;
+	left:0px;
+	width: 1100px;
+	top: 702px;
+	height: 40px;
+}
+*/
+
+#wrapper #footer {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #5F0ABC;
+	text-align: right;
+	text-indent: 20px;
+	padding: 10px;
+	height:26px;
+}
+
+
+
+
+
+#tinyLogo{
+	position:absolute;
+	top:162px;
+	left:205px;
+	
+
+}
+

@@ -1,0 +1,296 @@
+/*
+      Created by Keith Donegan of Code-Sucks.com
+	  
+	  E-Mail: Keithdonegan@gmail.com
+	  
+	  You can do whatever you want with these layouts,
+	  but it would be greatly appreciated if you gave a link
+	  back to http://www.code-sucks.com
+	  
+*/
+
+* { padding: 0; margin: 0; }
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #330067;
+}
+#logo {
+	position: absolute;
+	left: 25px;
+	top: 0px;
+}
+#wrapper {
+	width: 1018px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+}
+#faux {
+	margin-bottom: 0px;
+	overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+	width: 100%;
+	background-image: url(../images/bkg_content.jpg);
+	background-repeat: repeat-y;
+}
+/**/#header {
+	color: #333;
+	width: 1018px;
+	padding: 0px;
+	height: 64px;
+	margin: 0px;
+	background-image: url(../images/bkg_topper.jpg);
+}
+#leftcolumn {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 170px;
+	float: left;
+}
+#rightcolumn {
+	float: right;
+	color: #333;
+	margin: 0px;
+	padding: 0px;
+	width: 848px;
+	display: inline;
+	position: relative;
+}
+#footer {
+	width: 968px;
+	clear: both;
+	color: #CCC;
+	margin: 0px;
+	background-image: url(../images/bkg_footer.jpg);
+	background-repeat: repeat-x;
+	height: 25px;
+	text-align: right;
+	font-size: 11px;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-right: 50px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.bkg_dkgreen {
+	background-image: url(../images/bkg_dkgreen.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_gray {
+	background-image: url(../images/bkg_gray.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_orange{
+	background-image: url(../images/bkg_orange.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_copper{
+	background-image: url(../images/bkg_copper.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_aqua{
+	background-image: url(../images/bkg_aqua.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_blue{
+	background-image: url(../images/bkg_blue.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.bkg_red{
+	background-image: url(../images/bkg_red.jpg);
+	background-repeat: repeat-x;
+	background-color: #330067;
+}
+.clear { clear: both; background: none; }
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.homeContent {
+	background-image: url(../images/home_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.faqContent {
+	background-image: url(../images/faq_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.contactContent {
+	background-image: url(../images/contact_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.videoContent {
+	background-image: url(../images/video_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.affiliationsContent {
+	background-image: url(../images/affiliations_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.pressContent {
+	background-image: url(../images/press_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.eventContent {
+	background-image: url(../images/event_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.productsContent {
+	background-image: url(../images/products_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.shopContent {
+	background-image: url(../images/shop_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.rentalContent {
+	background-image: url(../images/rental_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+.repairsContent {
+	background-image: url(../images/repairs_bkg.jpg);
+	background-repeat: no-repeat;
+	height: 578px;
+	width: 848px;
+	display: block;
+}
+#header {
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 190px;
+	list-style-type: none;
+}
+#header ul li {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	float: left;
+	padding-right: 32px;
+	list-style-type: none;
+	padding-top: 20px;
+	padding-left: 32px;
+}
+#home_words {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-right: 55px;
+	padding-left: 480px;
+	padding-top: 70px;
+}
+#home_words p {
+	padding-bottom: 15px;
+}
+#header ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+#header ul li a:hover {
+	color: #CCC;
+}
+#Homepage_boxes ul{
+	margin: 0px;
+	list-style-type: none;
+	padding-top: 98px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 489px;
+}
+#Homepage_boxes ul li p {
+	padding-top: 2px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-size: 11px;
+	line-height: 13px;
+}
+#Homepage_boxes ul li {
+	list-style-type: none;
+	display: block;
+	width: 76px;
+	float: left;
+	padding-right: 37px;
+}
+#Homepage_boxes ul li p a {
+	color: #333;
+	text-decoration: none;
+}
+#Homepage_boxes ul li p a:hover {
+	color: #666;
+}
+#rightcolumn h1 {
+	font-size: 22px;
+	font-weight: bold;
+	color: #FFF;
+	margin: 0px;
+	padding-top: 30px;
+	padding-left: 50px;
+}
+#left_nav {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: right;
+	float: left;
+	width: 220px;
+	padding-top: 20px;
+	line-height: 32px;
+}
+#right_side {
+	background-color: #E0E0E0;
+	float: right;
+	width: 535px;
+	height: 520px;
+	display: block;
+	color: #333;
+	margin-right: 50px;
+}

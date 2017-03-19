@@ -1,0 +1,170 @@
+.prod_main {
+	background-color: white;
+	width: 525px;
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 9px;
+	height: 225px;
+	margin-top: -10px;
+}
+.prod_header {
+	background-color: silver;
+	font-size: 13px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.prod_header a {
+	background-color: silver;
+	padding-top: 4px;
+	color: black;
+}
+
+.prod_header a:hover {
+	background-color: silver;
+	color: white;
+}
+.prod_other {
+}
+.prod_descrip {
+	height: 230px;
+	width: 525px;
+	float: left;
+	margin-left: 40px;
+}
+.prod_sidebar {
+	float: left;
+	width: 175px;
+	margin-left: 80px;
+	clear: none;
+	height: 550px;
+	margin-top: -10px;
+}
+.prod_other_text {
+	background-color: white;
+	font-size: 11px;
+	padding-bottom: 8px;
+	padding-top: 1px;
+	text-align: center;
+}
+.prod_mainpic {
+	width: 200px;
+	float: left;
+	padding-left: 10px;
+	background-color: white;
+	padding-top: 10px;
+}
+.prod_maindesc {
+	width: 280px;
+	background-color: white;
+	clear: none;
+	float: left;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 18px;
+}
+.prod_maindesc {
+	width: 280px;
+	background-color: white;
+	clear: none;
+	float: left;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 18px;
+}
+.prod_maindesc a {
+	font-size: 10px;
+	color: #00F;
+}
+.prod_tabs {
+	background-color: #C9C9C9;
+	float: left;
+}
+.filler {
+}
+.prod_otherpic {
+	background-color: white;
+	height: 90px;
+	text-align: center;
+	padding-top: 5px;
+}
+.brand_header {
+	background-color: silver;
+	font-size: 13px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	float: left;
+}
+.brand_header a {
+	background-color: silver;
+	padding-top: 4px;
+	padding-left: 10px;
+	color: black;
+}
+.brand_header a:hover {
+	background-color: silver;
+	color: white;
+}
+.brand_descrip {
+	height: 230px;
+	width: 525px;
+	float: left;
+	margin-left: 295px;
+}
+.brand_sidebar {
+	float: left;
+	width: 150px;
+	margin-left: 80px;
+	height: 250px;
+}
+.brand_other_text {
+	background-color: white;
+	font-size: 11px;
+	padding-bottom: 8px;
+	padding-top: 1px;
+	text-align: center;
+}
+.brand_maindesc {
+	width: 250px;
+	background-color: white;
+	clear: none;
+	float: left;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 25px;
+}
+.brand_tabs {
+	background-color: #C9C9C9;
+	float: left;
+}
+#productname {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#productdesc {
+}
+
+.more {
+	float: right;
+	margin-right: 15px;
+	font-size: 14px;
+}
+.prod_options {
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.descript {
+	height: 70px;
+	padding-left: 7px;
+	margin-top: -4px;
+}
+img {
+	border-width: 0px;
+}
+a img {
+	border-width: 0px;
+}
